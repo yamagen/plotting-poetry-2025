@@ -2,16 +2,18 @@
 marp: true
 theme: default
 paginate: true
+backgroundColor: "#f5f5dc"
+color: "#333"
 ---
 
 ### Plotting Poetry 2025
 
-# Transforming Poetic Thought into Waka:
+# <span class="red">Transforming Poetic Thought into Waka:</span>
 
-## How to Pack the Skeleton into a 31-Syllable Closet
+### How to Pack the Skeleton into a 31-Syllable Closet
 
-- Bor Hodošček, The University of Osaka
-- Hilofumi Yamamoto, Institute of Science Tokyo
+- Bor Hodošček, <span class="blue">The University of Osaka</span>
+- Hilofumi Yamamoto, <span class="blue">Institute of Science Tokyo</span>
 
 ---
 
