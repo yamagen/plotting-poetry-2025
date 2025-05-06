@@ -69,3 +69,21 @@ JPN_ONLY_END -->
 - Create typology of transformation rules
 - Visualize linguistic constraints
 - Evaluate poetic fidelity and transformation cost
+
+---
+
+## Discussion
+
+- Explore poetic compression in modern Japanese
+- Analyze constraints in poetic expression
+- Discuss implications for translation and interpretation
+- Consider cultural and linguistic factors
+
+---
+
+## Conclusion
+
+- Waka as a lens for poetic thought
+- Compression as a creative constraint
+- Future research directions
+- Implications for translation studies
