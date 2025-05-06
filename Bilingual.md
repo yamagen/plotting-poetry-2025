@@ -7,7 +7,7 @@
 - 日本語版：marp slide.md -o slide-ja.pdf
 - 英語版：marp slide.md -o slide-en.pdf
 
-を出力する場合、以下のようにコメントベースで制御できます：
+を出力する場合、以下のようにコメントベースで制御できます。
 
 ```markdown
 <!-- JPN_ONLY_START -->
