@@ -8,7 +8,7 @@ paginate: true
 
 ## Transforming Poetic Thought into Waka:
 
-How to Pack the Skeleton into a 31-Syllable Closet
+### How to Pack the Skeleton into a 31-Syllable Closet
 
 - Bor Hodošček, The University of Osaka
 - Hilofumi Yamamoto, Institute of Science Tokyo
