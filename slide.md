@@ -10,6 +10,9 @@ paginate: true
 
 How to Pack the Skeleton into a 31-Syllable Closet
 
+- Bor Hodošček, The University of Osaka
+- Hilofumi Yamamoto, Institute of Science Tokyo
+
 ---
 
 ## Project Goals
