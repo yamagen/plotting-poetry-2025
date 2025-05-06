@@ -77,6 +77,26 @@ JPN_ONLY_END -->
 
 ---
 
+## Methods
+
+- Using a parallel corpus of waka and modern Japanese translations
+- Align waka with contemporary paraphrases
+- Use phrase gloss and structured data
+- Analyze rule types and transformation limits
+- Identify compression patterns for poetic thought
+
+---
+
+## Results
+
+- Identify and classify poetic strategies
+- Analyze how poetic thought is transfigured
+- Uncover underlying rules (overt and covert)
+- Explore the implications of compression
+- Simulate the transformation process
+
+---
+
 ## Discussion
 
 - Explore poetic compression in modern Japanese
