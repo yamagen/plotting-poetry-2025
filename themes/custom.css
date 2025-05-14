@@ -1,0 +1,70 @@
+@import "default"; /* デフォルトテーマをベースに */
+
+section {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.02em; /* 少し引き締める */
+  color: #222;
+  background-color: #fffefc; /* ほんのり温かい白 */
+  padding: 60px;
+}
+
+/* 見出しの引き締め＆メリハリ */
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #222;
+  letter-spacing: -0em;
+  margin-bottom: -0.7em;
+}
+
+h2 {
+  font-size: 42px;
+  color: #333;
+  letter-spacing: -0em;
+  margin-bottom: 0.6em;
+}
+
+h3 {
+  font-size: 36px;
+  color: #444;
+  letter-spacing: -0em;
+}
+
+/* 箇条書きの自然な余白 */
+ul,
+ol {
+  padding-left: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* 強調 */
+.important {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffecb5;
+  padding: 0.6em;
+  margin: 1em 0;
+  font-weight: bold;
+}
+
+/* コードブロック */
+pre {
+  background-color: #f4f4f4;
+  border-radius: 6px;
+  padding: 1em;
+  font-size: 90%;
+  font-family: "Courier New", monospace;
+  letter-spacing: -0.01em;
+}
+
+.red {
+  color: #d9534f;
+}
+.green {
+  color: #5cb85c;
+}
+.blue {
+  color: blue;
+}

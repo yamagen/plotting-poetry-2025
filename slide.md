@@ -55,6 +55,17 @@ JPN_ONLY_END -->
 
 ## Methodology
 
+### Materials
+
+- Kokinshu: a collection of 1000 waka poems
+- Modern Japanese translations
+- Parallel corpus of waka and modern Japanese translations
+- Contemporary paraphrases
+
+---
+
+## Computer programms
+
 - Align waka with contemporary paraphrases
 - Use phrase gloss and structured data
 - Analyze rule types and transformation limits
@@ -93,7 +104,7 @@ JPN_ONLY_END -->
 - Analyze how poetic thought is transfigured
 - Uncover underlying rules (overt and covert)
 - Explore the implications of compression
-- Simulate the transformation process
+- Simulate the transformation process:
 
 ---
 
@@ -112,3 +123,15 @@ JPN_ONLY_END -->
 - Compression as a creative constraint
 - Future research directions
 - Implications for translation studies
+
+---
+
+### Conclusion 0
+
+- Content of the work is impressive
+- Author's skill is impressive as well
+
+<!-- JPN_ONLY_START
+作品を通して、和歌は詩的思考のレンズとして機能し、圧縮は創造的な制約として機能することを示す。
+作品の内容のすごさを感じるだけでなく、作者のすごさも感じることができる。
+JPN_ONLY_END -->
