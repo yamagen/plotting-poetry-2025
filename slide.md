@@ -15,6 +15,8 @@ color: "#333"
 - Bor Hodošček, <span class="blue">The University of Osaka</span>
 - Hilofumi Yamamoto, <span class="blue">Institute of Science Tokyo</span>
 
+![thought2waka](./images/thought2waka01.png)
+
 ---
 
 ## Project Goals
@@ -22,8 +24,6 @@ color: "#333"
 - Reverse-engineer modern interpretations into waka
 - Identify compression patterns for poetic thought
 - Explore constraints and expression in 31-mora form
-
-![thought2waka](./images/thought2waka01.png)
 
 ---
 
