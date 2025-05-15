@@ -23,6 +23,8 @@ color: "#333"
 - Identify compression patterns for poetic thought
 - Explore constraints and expression in 31-mora form
 
+![thought2waka](./images/thought2waka01.png)
+
 ---
 
 ## Poetic Rules may include:
@@ -126,7 +128,7 @@ JPN_ONLY_END -->
 
 ---
 
-### Conclusion 0
+### Conclusion
 
 - Content of the work is impressive
 - Author's skill is impressive as well
