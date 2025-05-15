@@ -82,7 +82,6 @@ JPN_ONLY_END -->
 
 ---
 
-
 ---
 
 ## Waka as Ecosystem
@@ -123,7 +122,7 @@ W = f(R, N, H, C, V)
 
 ---
 
-## Case Study: Ise Monogatari, Section 9
+## Case Study: Ise Monogatari, Section 4
 
 > 月やあらぬ／春や昔の／春ならぬ／わが身は一つ／もとの身にして
 
@@ -132,7 +131,7 @@ W = f(R, N, H, C, V)
 - An **ecosystem of absence and memory**.
 
 ```
-W_Ise9 = f(R_lost love, N_moon/spring, H_classical imagery, C_silent reunion, V_elliptical form)
+W_Ise4 = f(R_lost love, N_moon/spring, H_classical imagery, C_silent reunion, V_elliptical form)
 ```
 
 ---
@@ -145,6 +144,7 @@ W_Ise9 = f(R_lost love, N_moon/spring, H_classical imagery, C_silent reunion, V_
 ```
 From Monolith (single voice) → To Ecosystem (relational resonance)
 ```
+
 ## Toward a Model
 
 - Create typology of transformation rules
