@@ -82,8 +82,6 @@ JPN_ONLY_END -->
 
 ---
 
----
-
 ## Waka as Ecosystem
 
 - Waka is not an isolated product of individual expression.
