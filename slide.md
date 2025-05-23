@@ -38,7 +38,7 @@ color: "#333"
 
 ### **Early Established Waka**
 
-- The Man'yoshu: est. around 7th -- 8th century in Chinese notation.
+- The Man'yoshu: est. around 7-8th century in Chinese notation.
 - The Kokinshu: est. ca. 905 in Japanese notation.
 
 ---
