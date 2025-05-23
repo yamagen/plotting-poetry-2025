@@ -55,9 +55,7 @@ JPN_ONLY_END -->
 
 ---
 
-## Methodology
-
-### Materials
+## Material
 
 - A) Kokinshu: a collection of 1000 waka poems
 - B) Modern Japanese translations: 10 sets of translations
@@ -97,6 +95,36 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 - Use phrase gloss and structured data
 - Analyze rule types and transformation limits
 - Identify compression patterns for poetic thought
+
+---
+
+### Steps
+
+1. Calculating of the frequency of the conversion patterns
+2. Clustering of the conversion patterns:
+   - Grammatical, Lexical, Structural, Rhetorical etc.
+3. Modeling of the conversion patterns:
+   - Rule based, Statistical based etc.
+
+<!-- JPN_ONLY_START
+1. 高頻度の変換ルールをリストアップ
+- 1000首×10訳 = 1万件 の現代語訳があるため、まず高頻度の変換パターンを抽出
+  例: 「～してしまった」→「～にけり」が頻繁に出現するか？
+- 形態素解析を用いて、文法変化のパターン を統計的に分析
+
+2. 変換パターンのクラスタリング
+
+- 文法変換（助詞の変更、動詞の時制変化）
+- 語彙変換（現代語 → 和歌語彙）
+- 構造変換（主語の省略、語順の変更）
+- 修辞技法（掛詞、縁語、比喩など）
+
+3. 変換ルールを機械学習でモデル化できるか検討
+
+- ルールベースの変換モデル（決定木やルールマイニング）
+- 統計的手法（n-gram分析で和歌に特徴的な表現を抽出）
+
+JPN_ONLY_END -->
 
 ---
 
