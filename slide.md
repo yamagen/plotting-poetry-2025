@@ -36,14 +36,14 @@ color: "#333"
 
 ---
 
-### Early Established Waka
+### **Early Established Waka**
 
 - The Man'yoshu: est. around 7th -- 8th century in Chinese notation.
 - The Kokinshu: est. ca. 905 in Japanese notation.
 
 ---
 
-### Style and Rhetorics
+### **Style and Rhetorics**
 
 <!-- JPN_ONLY_START
 - Only 31 syllables with 5,7,5,7,7 sounds
