@@ -27,6 +27,39 @@ color: "#333"
 
 ---
 
+## Basics of WAKA
+
+### **Japanese Song (Poem)**
+
+- WA &rarr; Japanese / Japanese style
+- KA &rarr; Song
+
+---
+
+### Early Established Waka
+
+- The Man'yoshu: est. around 7th -- 8th century in Chinese notation.
+- The Kokinshu: est. ca. 905 in Japanese notation.
+
+---
+
+### Style and Rhetorics
+
+<!-- JPN_ONLY_START
+- Only 31 syllables with 5,7,5,7,7 sounds
+- JPN:自然や感情を簡潔に表現する特徴
+- 掛詞、枕詞、序詞
+JPN_ONLY_END -->
+
+- Include only 31 syllables with 5,7,5,7,7 sounds
+- Express natural views and emotions in a simple sentence.
+- Use of rhetorics to create a poetic atmosphere:
+  - Pun (kakekotoba),
+  - Pillow words (makurakotoba), and
+  - Introductory words (jo-kotoba)
+
+---
+
 ## Poetic Rules may include:
 
 - Omission of grammatical elements
