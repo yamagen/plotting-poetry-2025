@@ -59,10 +59,10 @@ JPN_ONLY_END -->
 
 ### Materials
 
-- Kokinshu: a collection of 1000 waka poems
-- Modern Japanese translations
-- Parallel corpus of waka and modern Japanese translations
-- Contemporary paraphrases
+- A) Kokinshu: a collection of 1000 waka poems
+- B) Modern Japanese translations: 10 sets of translations
+
+Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
