@@ -60,6 +60,37 @@ JPN_ONLY_END -->
 
 ---
 
+### Kokin Wakashū Kana Preface
+
+    やまとうたは、人の心を種として、よろづの言の葉とぞなれりける。
+    世の中にある人、ことわざ繁きものなれば、心に思ふことを、見るもの聞くものにつけて、言ひ出せるなり。
+
+    Japanese poetry (yamato-uta) takes the human heart as its seed, and from it
+    grows a myriad of words and leaves. Since people living in this world are
+    surrounded by countless events, they express what they feel in their hearts
+    by attaching it to the things they see and hear.
+
+---
+
+### Kanajo: Preface of the Kokinshu
+
+- Does not mention the 31-syllable form
+  - The format is drived from the practice of poetic expression
+  - Not too short, not too long, just right for expressing emotions
+  - One theory suggests that the pleasantness of phonetics and rhythm (5-7 pattern),
+  - The length of breath, and ease of recitation and transmission are involved.
+
+---
+
+### Is 31-Syllable Form the Closet? No, it's not!
+
+- The 31-syllable is the final form of the poem, not the initial one.
+- The constraint of Waka is the construction of 5,7,5,7,7 syllables.
+- Poets create a poem under the 5 segments of 5,7,5,7,7 syllables constraint.
+- So, first poets seek words fitting each segment, then they combine them into a 31-syllable poem.
+
+---
+
 ## Poetic Rules may include:
 
 - Omission of grammatical elements
