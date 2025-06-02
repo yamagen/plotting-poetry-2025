@@ -219,17 +219,7 @@ JPN_ONLY_END -->
 
 ---
 
-## Results
-
-- Identify and classify poetic strategies
-- Analyze how poetic thought is transfigured
-- Uncover underlying rules (overt and covert)
-- Explore the implications of compression
-- Simulate the transformation process:
-
----
-
-#### Original poem: Kokinshu No.3
+### Original poem: Kokinshu No.3
 
 <div class="dataset">
 1 KW000003 111 1 02 00 00 BG-01-5152-09-040-A はるがすみ はるがすみ 春霞 spring haze
@@ -254,7 +244,7 @@ JPN_ONLY_END -->
 
 ---
 
-#### Translation: Kaneko No.3
+### Translation: Kaneko No.3
 
 <div class="dataset">
 <span class="red">1 kaneko 0003 0 02 00 00 BG-01-1624-02-010-A 春 はる 春 spring</span>
@@ -327,6 +317,16 @@ D (ratio of purely added) A-(P1+P2)= 0.561
 H (theoretical value) 1-16/39 = 0.590
 Gap: fabs(D-H)= 0.029
 ```
+
+---
+
+## Results
+
+- Identify and classify poetic strategies
+- Analyze how poetic thought is transfigured
+- Uncover underlying rules (overt and covert)
+- Explore the implications of compression
+- Simulate the transformation process:
 
 ---
 
