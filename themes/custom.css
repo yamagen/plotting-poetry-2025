@@ -1,8 +1,8 @@
-/*@import "default";*/ /* デフォルトテーマをベースに */
+@import "default"; /* デフォルトテーマをベースに */
 
 section {
   font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 28px;
+  font-size: 30px;
   line-height: 1;
   letter-spacing: -0.02em; /* 少し引き締める */
   color: #222;
@@ -14,7 +14,7 @@ section {
 h1 {
   font-size: 50px;
   font-weight: bold;
-  color: Red;
+  color: #222;
   letter-spacing: -0em;
   margin-bottom: -0.7em;
 }
@@ -86,10 +86,10 @@ td {
 
 /* 見出し行の背景 */
 th {
-  background-color: #9dd;
+  background-color: #97d0d0;
   font-weight: bold;
 }
 
-tr:nth-child(even) {
-  background-color: #bdd; /* 濃いグレー */
+section table tr:nth-child(even) {
+  background-color: #c0d0d0 !important;
 }
