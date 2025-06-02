@@ -132,16 +132,26 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 | No. | Translator                  | Year | Pages | Manuscript | Translation Style              |
 | --: | :-------------------------- | ---: | ----: | :--------- | :----------------------------- |
-|  1. | Kaneko Motoomi              | 1933 |  1105 | Teika      | Literal translation            |
-|  2. | Kubota Utsubo               | 1960 |  1449 | Teika      | Literal translation            |
-|  3. | Matsuda Takeo               | 1968 |  1998 | Teika      | Free translation               |
+|  1. | Kaneko Motoomi              | 1933 | 1,105 | Teika      | Literal translation            |
+|  2. | Kubota Utsubo               | 1960 | 1,449 | Teika      | Literal translation            |
+|  3. | Matsuda Takeo               | 1968 | 1,998 | Teika      | Free translation               |
 |  4. | Ozawa Masao                 | 1971 |   544 | Teika      | Changes word order and grammar |
-|  5. | Takeoka Masao               | 1976 |  2278 | Teika      | Literal translation            |
+|  5. | Takeoka Masao               | 1976 | 2,278 | Teika      | Literal translation            |
 |  6. | Okumura Tsuneya             | 1978 |   434 | Teika      | Respects author's intent       |
-|  7. | Kusojin Hitaku              | 1979 |  1260 | Teika      | Supplements words              |
+|  7. | Kusojin Hitaku              | 1979 | 1,260 | Teika      | Supplements words              |
 |  8. | Komachiya Teruhiko          | 1982 |   407 | Teika      | Unknown                        |
 |  9. | Kojima Noriyuki & Arai Eizo | 1989 |   483 | Teika      | Unknown                        |
-| 10. | Katagiri Yoichi             | 1998 |  3022 | Teika      | Literal translation            |
+| 10. | Katagiri Yoichi             | 1998 | 3,022 | Teika      | Literal translation            |
+
+---
+
+### 🌿 具体的な進め方（提案）
+
+- ✅ Step 1: 10種の翻訳データを受け取り、Kokinshu_1-1000と整合するように整形
+- ✅ Step 2: 各句・各翻訳でどのような変換パターンが適用されているかを分類（例：直訳、補足、圧縮、再構築、転換）
+- ✅ Step 3: 全体頻度を集計 → パターン分布を確認
+- ✅ Step 4: 季節分類（1-197 春、198-247 夏、248-324 秋、325-346 冬など）で細分化分析
+- ✅ Step 5: 比較・可視化（ヒートマップ、円グラフ、棒グラフ）
 
 ---
 
