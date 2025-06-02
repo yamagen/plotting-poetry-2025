@@ -128,6 +128,21 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
+### Ten kinds of the Translations
+
+| No. | Translator                  | Year | Pages | Manuscript | Translation Style              |
+| --: | :-------------------------- | ---: | ----: | :--------- | :----------------------------- |
+|  1. | Kaneko Motoomi              | 1933 |  1105 | Teika      | Literal translation            |
+|  2. | Kubota Utsubo               | 1960 |  1449 | Teika      | Literal translation            |
+|  3. | Matsuda Takeo               | 1968 |  1998 | Teika      | Free translation               |
+|  4. | Ozawa Masao                 | 1971 |   544 | Teika      | Changes word order and grammar |
+|  5. | Takeoka Masao               | 1976 |  2278 | Teika      | Literal translation            |
+|  6. | Okumura Tsuneya             | 1978 |   434 | Teika      | Respects author's intent       |
+|  7. | Kusojin Hitaku              | 1979 |  1260 | Teika      | Supplements words              |
+|  8. | Komachiya Teruhiko          | 1982 |   407 | Teika      | Unknown                        |
+|  9. | Kojima Noriyuki & Arai Eizo | 1989 |   483 | Teika      | Unknown                        |
+| 10. | Katagiri Yoichi             | 1998 |  3022 | Teika      | Literal translation            |
+
 ## Computer programms
 
 - Align waka with contemporary paraphrases
