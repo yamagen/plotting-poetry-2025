@@ -1,8 +1,8 @@
-@import "default"; /* デフォルトテーマをベースに */
+/*@import "default";*/ /* デフォルトテーマをベースに */
 
 section {
   font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1;
   letter-spacing: -0.02em; /* 少し引き締める */
   color: #222;
@@ -14,7 +14,7 @@ section {
 h1 {
   font-size: 50px;
   font-weight: bold;
-  color: #222;
+  color: Red;
   letter-spacing: -0em;
   margin-bottom: -0.7em;
 }
@@ -67,4 +67,29 @@ pre {
 }
 .blue {
   color: blue;
+}
+
+/* 表の基本スタイル */
+table {
+  border-collapse: collapse;
+  font-size: 0.8em;
+  width: 100%;
+  margin: 1em 0;
+}
+
+/* 表の境界線 */
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}
+
+/* 見出し行の背景 */
+th {
+  background-color: #9dd;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #bdd; /* 濃いグレー */
 }

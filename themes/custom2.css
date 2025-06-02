@@ -14,7 +14,7 @@ section {
 h1 {
   font-size: 50px;
   font-weight: bold;
-  color: #222;
+  color: Red;
   letter-spacing: -0em;
   margin-bottom: -0.7em;
 }
@@ -89,27 +89,6 @@ th {
   font-weight: bold;
 }
 
-/* 奇数行・偶数行の交互背景色 
-
 tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-tr:nth-child(even) {
-  background-color: #e6e6e6; 
-}
-tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-*/
-
-tr:nth-child(even) {
-  background-color: #dce6f1; /* 青みがかった薄グレー */
-}
-tr:nth-child(odd) {
-  background-color: #ffffff;
+  background-color: #d0d0d0; /* 濃いグレー */
 }

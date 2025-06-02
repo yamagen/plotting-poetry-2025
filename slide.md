@@ -19,7 +19,7 @@ color: "#333"
 
 ---
 
-## Project Goals
+## Proect Goals
 
 - Reverse-engineer modern interpretations into waka
 - Identify compression patterns for poetic thought
@@ -54,9 +54,9 @@ JPN_ONLY_END -->
 - Include only 31 syllables with 5,7,5,7,7 sounds
 - Express natural views and emotions in a simple sentence.
 - Use of rhetorics to create a poetic atmosphere:
-  - Pun (kakekotoba),
-  - Pillow words (makurakotoba), and
-  - Introductory words (jo-kotoba)
+- Pun (kakekotoba),
+- Pillow words (makurakotoba), and
+- Introductory words (o-kotoba)
 
 ---
 
