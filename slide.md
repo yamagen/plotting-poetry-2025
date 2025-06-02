@@ -143,6 +143,8 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 |  9. | Kojima Noriyuki & Arai Eizo | 1989 |   483 | Teika      | Unknown                        |
 | 10. | Katagiri Yoichi             | 1998 |  3022 | Teika      | Literal translation            |
 
+---
+
 ## Computer programms
 
 - Align waka with contemporary paraphrases
