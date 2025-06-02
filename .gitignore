@@ -1,6 +1,6 @@
-draft.*
 *.txt
 data/*
+draft/*
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
