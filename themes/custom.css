@@ -77,6 +77,24 @@ table {
   margin: 1em 0;
 }
 
+.datasetsmall {
+  font-family: monospace;
+  white-space: pre-wrap;
+  font-size: 0.8em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.dataset {
+  font-family: monospace;
+  white-space: pre-wrap;
+  font-size: 0.9em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
 /* 表の境界線 */
 th,
 td {

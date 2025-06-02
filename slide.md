@@ -145,13 +145,13 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
-### 🌿 具体的な進め方（提案）
+### 🌿 Steps of the Analysis
 
-- ✅ Step 1: 10種の翻訳データを受け取り、Kokinshu_1-1000と整合するように整形
-- ✅ Step 2: 各句・各翻訳でどのような変換パターンが適用されているかを分類（例：直訳、補足、圧縮、再構築、転換）
-- ✅ Step 3: 全体頻度を集計 → パターン分布を確認
-- ✅ Step 4: 季節分類（1-197 春、198-247 夏、248-324 秋、325-346 冬など）で細分化分析
-- ✅ Step 5: 比較・可視化（ヒートマップ、円グラフ、棒グラフ）
+✅ Step 1: 10 kinds of translation data sets compparing with an Original poem dataset.
+✅ Step 2: matching done by token codes based on WSLP (semantic principle codes)
+✅ Step 3: Basic statistics and Residual patterns.
+✅ Step 4: Differences between Translators / Seasonal Sections
+✅ Step 5: Topological pattern lists
 
 ---
 
@@ -226,6 +226,107 @@ JPN_ONLY_END -->
 - Uncover underlying rules (overt and covert)
 - Explore the implications of compression
 - Simulate the transformation process:
+
+---
+
+#### Original poem: Kokinshu No.3
+
+<div class="dataset">
+1 KW000003 111 1 02 00 00 BG-01-5152-09-040-A はるがすみ はるがすみ 春霞 spring haze
+<span class="red">1 KW000003 111 3 02 00 00 BG-01-1624-02-010-A -- はる 春 spring
+1 KW000003 111 3 02 00 00 BG-01-5152-09-010-A -- かすみ 霞 haze</span>
+1 KW000003 211 0 47 25 04 BG-02-1513-01-010-A たて たつ 立つ
+1 KW000003 212 0 74 68 20 BG-09-0010-03-030-C る り り
+1 KW000003 213 0 65 00 00 BG-08-0065-14-010-C や や や
+1 KW000003 221 0 14 00 00 BG-01-1700-02-100-C いづこ いづこ 何処
+1 KW000003 311 0 11 00 00 CH-29-0000-20-010-A みよしの みよしの 御吉野
+1 KW000003 312 0 71 00 00 BG-08-0071-01-010-A の の の
+1 KW000003 411 0 11 00 00 CH-29-0000-20-010-A よしの よしの 吉野
+1 KW000003 412 0 71 00 00 BG-08-0071-01-010-A の の の
+1 KW000003 421 0 02 00 00 BG-01-5240-05-010-A やま やま 山
+1 KW000003 422 0 61 00 00 BG-08-0061-05-010-A に に に
+1 KW000003 511 0 02 00 00 BG-01-5153-07-010-A ゆき ゆき 雪
+1 KW000003 512 0 65 00 00 BG-08-0065-07-010-A は は は
+1 KW000003 521 0 47 28 03 BG-02-1540-10-010-A ふり ふる 降る
+2 KW000003 521 2 47 28 03 BG-02-5150-03-010-A ふり ふる 降る
+1 KW000003 522 0 64 00 00 BG-08-0064-15-010-A つつ つつ つつ
+</div>
+
+---
+
+#### Translation: Kaneko No.3
+
+<div class="dataset">
+<span class="red">1 kaneko 0003 0 02 00 00 BG-01-1624-02-010-A 春 はる 春 spring</span>
+1 kaneko 0003 0 61 00 00 BG-08-0061-05-010-A に に に
+1 kaneko 0003 0 65 00 00 BG-08-0065-07-010-A は は は
+1 kaneko 0003 0 47 17 06 BG-02-1220-01-030-A 成っ なる 成る
+1 kaneko 0003 0 74 54 01 BG-09-0010-04-010-A た た た
+1 kaneko 0003 0 64 00 00 BG-08-0064-04-010-A が が が
+1 kaneko 0003 0 79 00 00 BG-16-0079-01-010-A 、 、 、
+1 kaneko 0003 1 18 00 00 BG-03-3010-02-140-A 長閑 のどか 長閑
+1 kaneko 0003 2 18 00 00 BG-03-5150-02-040-A -- のどか のどか
+1 kaneko 0003 0 74 55 06 BG-09-0050-01-030-A な だ だ
+<span class="red">1 kaneko 0003 0 02 00 00 BG-01-5152-09-010-A 霞 かすみ 霞 haze</span>
+1 kaneko 0003 0 61 00 00 BG-08-0061-07-010-A の の の
+1 kaneko 0003 0 47 13 05 BG-02-1513-01-010-A 立っ たつ 立つ
+2 kaneko 0003 2 47 13 05 BG-02-1521-06-020-A 立っ たつ 立つ
+3 kaneko 0003 2 47 13 05 BG-02-3330-11-020-A 立っ たつ 立つ
+4 kaneko 0003 2 47 13 05 BG-02-3391-02-110-A 立っ たつ 立つ
+1 kaneko 0003 0 64 00 00 BG-08-0064-16-010-A て て て
+</div>
+
+---
+
+### Matching Diagram
+
+<div class="datasetsmall">
+ +-------- number of pair
+ |  +----- value of exact=17, field=13, group=10
+ |  |  +-- number of POS
+ |  |  |
+ |  |  |   number of OP token -----+     +----- number of CT token
+ |  |  |             OP token --+  |     |  +-- CT token
+ |  |  |                        |  |     |  |
+ 1 13  2                       春 01 <-> 00 春
+ 2 17  2                       霞 02 <-> 10 霞
+ 3 17 47                     立つ 03 <-> 12 立つ
+ 4 13 65                       や 05 <-> 26 か
+ 5 17 14                     何処 06 <-> 20 何処
+ 6 17 71                       の 08 <-> 21 の
+ 7 17 11                     吉野 09 <-> 30 吉野
+ 8 17 71                       の 10 <-> 31 の
+ 9 17  2                       山 11 <-> 37 山
+10 17 61                       に 12 <-> 38 に
+11 17  2                       雪 13 <-> 40 雪
+12 17 65                       は 14 <-> 02 は
+13 17 47                     降る 16 <-> 43 降る
+14 10 64                     つつ 17 <-> 47 て
+</div>
+
+---
+
+### Performance
+
+```
+OP(valid number of items)              = 16
+E (ratio of exact agreement)     11/16 = 0.688
+F (ratio of field agreement)      2/16 = 0.125
+G (ratio of group agreement)      1/16 = 0.062
+T (ratio of total agreement)     14/16 = 0.875
+U (ratio of unmatched)           1 - T = 0.125
+
+CT(valid number of items) = 39
+W (ratio of original word use) 11/39 = 0.282
+A (ratio of annotation) 1 - W = 0.718
+
+- breakdown of the annotation -
+P1(ratio of FG paraphrased) (F+G)/V = 0.077
+P2(ratio of U paraphrased) (A-P1)\*U = 0.080
+D (ratio of purely added) A-(P1+P2)= 0.561
+H (theoretical value) 1-16/39 = 0.590
+Gap: fabs(D-H)= 0.029
+```
 
 ---
 
