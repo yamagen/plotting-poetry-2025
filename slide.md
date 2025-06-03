@@ -243,7 +243,7 @@ Spring has arrived, but where is that gentle haze drifting? Here in the Yoshino 
 
 ---
 
-### Original poem: Kokinshu No.3
+### OP: Kokinshu No.3
 
 <div class="dataset">
 1 KW000003 111 1 02 00 00 BG-01-5152-09-040-A はるがすみ はるがすみ 春霞 spring haze
@@ -268,7 +268,7 @@ Spring has arrived, but where is that gentle haze drifting? Here in the Yoshino 
 
 ---
 
-### Translation: Kaneko No.3
+### CT: Kaneko No.3
 
 <div class="dataset">
 <span class="red">1 kaneko 0003 0 02 00 00 BG-01-1624-02-010-A 春 はる 春 spring</span>
