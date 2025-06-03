@@ -298,10 +298,14 @@ Spring has arrived, but where is that gentle haze drifting? Here in the Yoshino 
 <div class="datasetlarge">
  BG-01-2030-01-030-A-かみ-神 (god)
 <span style="margin-left: 23mm;">&uarr;</span><span style="margin-left: 13mm;">&uarr;</span><span style="margin-left: 13mm;">&uarr;</span>
-<span style="margin-left: 26mm;">G</span><span style="margin-left: 20mm;">F</span><span style="margin-left: 19mm;">E</span>
+<span style="margin-left: 26mm;"><span class="green">G</span></span><span style="margin-left: 20mm;"><span class="blue">F</span></span><span style="margin-left: 19mm;"><span class="red">E</span></span>
 <span style="margin-left: 23mm;">&darr;</span><span style="margin-left: 13mm;">&darr;</span><span style="margin-left: 13mm;">&darr;</span>
  BG-01-2030-01-250-A-ほとけ-仏 (Buddha)
 </div>
+
+- <span class="green">G: Group match</span>
+- <span class="blue">F: Field match</span>
+- <span class="red">E: Exact match</span>
 
 ---
 
