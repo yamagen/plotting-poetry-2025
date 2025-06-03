@@ -77,6 +77,15 @@ table {
   margin: 1em 0;
 }
 
+.datasetlarge {
+  font-family: monospace;
+  white-space: pre-wrap;
+  font-size: 1.6em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
 .datasetsmall {
   font-family: monospace;
   white-space: pre-wrap;

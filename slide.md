@@ -288,6 +288,19 @@ Spring has arrived, but where is that gentle haze drifting? Here in the Yoshino 
 3 kaneko 0003 2 47 13 05 BG-02-3330-11-020-A 立っ たつ 立つ
 4 kaneko 0003 2 47 13 05 BG-02-3391-02-110-A 立っ たつ 立つ
 1 kaneko 0003 0 64 00 00 BG-08-0064-16-010-A て て て
+    ... continues
+</div>
+
+---
+
+### Meta-code system
+
+<div class="datasetlarge">
+ BG-01-2030-01-030-A-かみ-神 (god)
+<span style="margin-left: 23mm;">&uarr;</span><span style="margin-left: 13mm;">&uarr;</span><span style="margin-left: 13mm;">&uarr;</span>
+<span style="margin-left: 26mm;">G</span><span style="margin-left: 20mm;">F</span><span style="margin-left: 19mm;">E</span>
+<span style="margin-left: 23mm;">&darr;</span><span style="margin-left: 13mm;">&darr;</span><span style="margin-left: 13mm;">&darr;</span>
+ BG-01-2030-01-250-A-ほとけ-仏 (Buddha)
 </div>
 
 ---
