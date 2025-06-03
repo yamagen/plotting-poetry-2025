@@ -33,7 +33,9 @@ Classical Japanese Poetry, <span class="red">WA</span><span class="blue">KA</spa
 
 - <span class="red">WA</span> &rarr; Japanese / Japanese style
 - <span class="blue">KA</span> &rarr; Song
+
 <div style="text-align: right;">
+    Spring Haze
 <img src="./images/harugasumi2.webp" height="300mm" />
 <img src="./images/harugasumi.jpg" height="300mm" />
 </div>
@@ -99,7 +101,7 @@ JPN_ONLY_END -->
 
 - Omission of grammatical elements
 - Inversion of word order
-- Symbolic substitutionk
+- Symbolic substitution
 - Nominalization
 - Manipulation of ambiguity
 - Compression of meaning
