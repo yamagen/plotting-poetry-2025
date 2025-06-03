@@ -219,6 +219,24 @@ JPN_ONLY_END -->
 
 ---
 
+### Evaluation of Pattern Matching by Machine
+
+Kokinshu No. 3 CT by kaneko
+
+<div class="dataset">
+OP   : はるがすみ.たてるや.いづこ.みよしの.の.よしの.の.やまに.ゆき.は.ふりつつ
+Gloss: spring haze.arises?.where?.Miyoshino.of.Yoshino.of.Mt.snow.falling
+Spring haze—where does it rise? 
+On Mount Yoshino in Yoshino, the snow keeps falling and falling.
+</div>
+
+<div class="dataset">
+CT: 春には成ったが、長閑な霞の立っているのは何処の辺か、この吉野の里の吉野山には雪が降り降りして、一向に春めきもしない。
+Spring has arrived, but where is that gentle haze drifting? Here in the Yoshino village, on Mount Yoshino, snow keeps falling and falling, and it shows no sign of spring at all.
+    </div>
+
+---
+
 ### Original poem: Kokinshu No.3
 
 <div class="dataset">
@@ -296,27 +314,40 @@ JPN_ONLY_END -->
 
 ---
 
-### Performance
+### Matched elements breakdown between OP and CT
 
-```
-OP(valid number of items)              = 16
-E (ratio of exact agreement)     11/16 = 0.688
-F (ratio of field agreement)      2/16 = 0.125
-G (ratio of group agreement)      1/16 = 0.062
-T (ratio of total agreement)     14/16 = 0.875
-U (ratio of unmatched)           1 - T = 0.125
-
-CT(valid number of items) = 39
-W (ratio of original word use) 11/39 = 0.282
-A (ratio of annotation) 1 - W = 0.718
-
+<div class="dataset">
+<span class="blue">OP(original poem; valid number of items)             = 16</span>
+E (ratio of exact agreement)                        11/16 = 0.688
+F (ratio of field agreement)                         2/16 = 0.125
+G (ratio of group agreement)                         1/16 = 0.062
+T (ratio of total agreement)                        14/16 = 0.875
+U (ratio of unmatched)                              1 - T = 0.125
+    ------
+<span class="blue">CT(contemporary translation; valid number of items)  = 39</span>
+W (ratio of original word use)                      11/39 = 0.282
+A (ratio of annotation)                             1 - W = 0.718
 - breakdown of the annotation -
-P1(ratio of FG paraphrased) (F+G)/V = 0.077
-P2(ratio of U paraphrased) (A-P1)\*U = 0.080
-D (ratio of purely added) A-(P1+P2)= 0.561
-H (theoretical value) 1-16/39 = 0.590
-Gap: fabs(D-H)= 0.029
-```
+P1(ratio of FG paraphrased)                       (F+G)/V = 0.077
+P2(ratio of U paraphrased)                      (A-P1)\*U = 0.080
+    ------
+<span class="red">D (ratio of purely added)                        A-(P1+P2)= 0.561</span>
+H (theoretical value)                             1-16/39 = 0.590
+Gap:                                             fabs(D-H)= 0.029
+</div>
+
+---
+
+### Four Seasons Sections of Kokin Wakashū
+
+| Section | Volume Number | Range        | Corresponding Numbers | Number of Poems |
+| ------- | ------------- | ------------ | --------------------- | --------------- |
+| Spring  | Volume 1      | Spring Upper | 1-55                  | 55 poems        |
+| Spring  | Volume 2      | Spring Lower | 56-110                | 55 poems        |
+| Summer  | Volume 3      | Summer       | 111-124               | 14 poems        |
+| Autumn  | Volume 4      | Autumn Upper | 125-179               | 55 poems        |
+| Autumn  | Volume 5      | Autumn Lower | 180-232               | 53 poems        |
+| Winter  | Volume 6      | Winter       | 233-249               | 17 poems        |
 
 ---
 
