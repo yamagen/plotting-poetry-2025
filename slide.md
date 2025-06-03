@@ -19,20 +19,20 @@ color: "#333"
 
 ---
 
-## Proect Goals
+## **Proect Goals**
 
-- Reverse-engineer modern interpretations into waka
+- Reverse-engineering way of modern interpretations into waka; a.k.a. what's in it?
 - Identify compression patterns for poetic thought
-- Explore constraints and expression in 31-mora form
+- Explore constraints and expression in 31-syllable form
 
 ---
 
-## Basics of WAKA
+## **Basics of WAKA**
 
-### **Japanese Song (Poem)**
+Classical Japanese Poetry, <span class="red">WA</span><span class="blue">KA</span>
 
-- WA &rarr; Japanese / Japanese style
-- KA &rarr; Song
+- <span class="red">WA</span> &rarr; Japanese / Japanese style
+- <span class="blue">KA</span> &rarr; Song
 
 ---
 
@@ -103,23 +103,9 @@ JPN_ONLY_END -->
 - Reinterpretation of context
   ...
 
-<!-- JPN_ONLY_START
-
-\ifJPN
-本研究の目的は、現代日本語訳を和歌の厳格な31音の形式に圧縮するために使用される詩的戦略を特定し、分類することである。
-詩的思考が31音の厳格な構造に変形される過程を分析することで、そのような変換を可能にする根本的なルール（明示的および暗黙的）を明らかにしようとする。
-これらのルールには、文法要素の省略、語順の逆転、象徴的な置換、名詞化、曖昧さの操作などが含まれる可能性がある。
-\else
-This study aims to identify and classify the poetic strategies used to compress expansive modern Japanese translations into the condensed form of waka poetry.
-By analyzing how poetic thought is transfigured into the rigid structure of a 31-syllable tanka, we seek to uncover the underlying rules—both overt and covert—that make such transformation possible.
-These rules may include omission of grammatical elements, inversion of word order, symbolic substitution, nominalization, and manipulation of ambiguity.
-\fi
-
-JPN_ONLY_END -->
-
 ---
 
-## Material
+## **Material**
 
 - A) Kokinshu: a collection of 1000 waka poems
 - B) Modern Japanese translations: 10 sets of translations
@@ -307,13 +293,15 @@ Spring has arrived, but where is that gentle haze drifting? Here in the Yoshino 
 - <span class="blue">F: Field match</span>
 - <span class="red">E: Exact match</span>
 
+The three matching levels are judged by the length of BG-code digits.
+
 ---
 
 ### Matching Diagram
 
 <div class="datasetsmall">
  +-------- number of pair
- |  +----- value of exact=17, field=13, group=10
+ |  +----- value of <span class="red">exact=17</span>, <span class="blue">field=13</span>, <span class="green">group=10</span>
  |  |  +-- number of POS
  |  |  |
  |  |  |   number of OP token -----+     +----- number of CT token
@@ -352,7 +340,7 @@ W (ratio of original word use)                      11/39 = 0.282
 A (ratio of annotation)                             1 - W = 0.718
 - breakdown of the annotation -
 P1(ratio of FG paraphrased)                       (F+G)/V = 0.077
-P2(ratio of U paraphrased)                      (A-P1)\*U = 0.080
+P2(ratio of U paraphrased)                       (A-P1)*U = 0.080
     ------
 <span class="red">D (ratio of purely added)                        A-(P1+P2)= 0.561</span>
 H (theoretical value)                             1-16/39 = 0.590
