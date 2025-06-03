@@ -33,6 +33,10 @@ Classical Japanese Poetry, <span class="red">WA</span><span class="blue">KA</spa
 
 - <span class="red">WA</span> &rarr; Japanese / Japanese style
 - <span class="blue">KA</span> &rarr; Song
+<div style="text-align: right;">
+<img src="./images/harugasumi2.webp" height="300mm" />
+<img src="./images/harugasumi.jpg" height="300mm" />
+</div>
 
 ---
 
@@ -60,7 +64,7 @@ JPN_ONLY_END -->
 
 ---
 
-### Kokin Wakashū Kana Preface
+### **Preface of Kokinshū: Kanajo**
 
     やまとうたは、人の心を種として、よろづの言の葉とぞなれりける。
     世の中にある人、ことわざ繁きものなれば、心に思ふことを、見るもの聞くものにつけて、言ひ出せるなり。
@@ -72,13 +76,13 @@ JPN_ONLY_END -->
 
 ---
 
-### Kanajo: Preface of the Kokinshu
+### **Preface of Kokinshū: Kanajo**
 
 - Does not mention the 31-syllable form
-  - The format is drived from the practice of poetic expression
-  - Not too short, not too long, just right for expressing emotions
-  - One theory suggests that the pleasantness of phonetics and rhythm (5-7 pattern),
-  - The length of breath, and ease of recitation and transmission are involved.
+- The format is drived from the practice of poetic expression
+- Not too short, not too long, just right for expressing emotions
+- One theory suggests that the pleasantness of phonetics and rhythm (5-7 pattern),
+- The length of breath, and ease of recitation and transmission are involved.
 
 ---
 
@@ -390,12 +394,13 @@ Gap:                                             fabs(D-H)= 0.029
 
 ---
 
-### Conclusion
+### Predicate sections
 
-- Content of the work is impressive
-- Author's skill is impressive as well
+- The simplest verb form can express variously.
 
-<!-- JPN_ONLY_START
-作品を通して、和歌は詩的思考のレンズとして機能し、圧縮は創造的な制約として機能することを示す。
-作品の内容のすごさを感じるだけでなく、作者のすごさも感じることができる。
-JPN_ONLY_END -->
+---
+
+### Content words
+
+- No modifications.
+- Noun and adjective expand images
