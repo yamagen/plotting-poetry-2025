@@ -223,17 +223,17 @@ JPN_ONLY_END -->
 
 Kokinshu No. 3 CT by kaneko
 
-<div class="dataset">
-OP   : はるがすみ.たてる.や.いづこ.みよしの.の.よしの.の.やまに.ゆき.は.ふりつつ
+<div class="dataset"><span class="blue">
+OP   : はるがすみ.たてる.や.いづこ.みよしの.の.よしの.の.やまに.ゆき.は.ふりつつ</span>
 Gloss: spring haze.arise.Q.where?.Miyoshino.of.Yoshino.of.Mt.snow.falling
 -----------
 Spring haze—where does it rise? On Mount Yoshino in Yoshino, the snow keeps falling and falling.
 
 </div>
 
-<div class="dataset">
+<div class="dataset"><span class="red">
 CT   : 春には成ったが、長閑な霞の立っているのは何処の辺か、この吉野の里の吉野山には
-       雪が降り降りして、一向に春めきもしない。
+       雪が降り降りして、一向に春めきもしない。</span>
 Gloss: spring----------------haze.arize---------where----Q------Yoshino--MtYoshino-
        snow--fallfall-----------------------
 -----------
