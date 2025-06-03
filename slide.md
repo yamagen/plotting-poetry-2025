@@ -224,16 +224,22 @@ JPN_ONLY_END -->
 Kokinshu No. 3 CT by kaneko
 
 <div class="dataset">
-OP   : はるがすみ.たてるや.いづこ.みよしの.の.よしの.の.やまに.ゆき.は.ふりつつ
-Gloss: spring haze.arises?.where?.Miyoshino.of.Yoshino.of.Mt.snow.falling
-Spring haze—where does it rise? 
-On Mount Yoshino in Yoshino, the snow keeps falling and falling.
+OP   : はるがすみ.たてる.や.いづこ.みよしの.の.よしの.の.やまに.ゆき.は.ふりつつ
+Gloss: spring haze.arise.Q.where?.Miyoshino.of.Yoshino.of.Mt.snow.falling
+-----------
+Spring haze—where does it rise? On Mount Yoshino in Yoshino, the snow keeps falling and falling.
+
 </div>
 
 <div class="dataset">
-CT: 春には成ったが、長閑な霞の立っているのは何処の辺か、この吉野の里の吉野山には雪が降り降りして、一向に春めきもしない。
+CT   : 春には成ったが、長閑な霞の立っているのは何処の辺か、この吉野の里の吉野山には
+       雪が降り降りして、一向に春めきもしない。
+Gloss: spring----------------haze.arize---------where----Q------Yoshino--MtYoshino-
+       snow--fallfall-----------------------
+-----------
 Spring has arrived, but where is that gentle haze drifting? Here in the Yoshino village, on Mount Yoshino, snow keeps falling and falling, and it shows no sign of spring at all.
-    </div>
+
+</div>
 
 ---
 
