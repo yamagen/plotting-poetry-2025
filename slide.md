@@ -19,14 +19,6 @@ color: "#333"
 
 ---
 
-## **Proect Goals**
-
-- Reverse-engineering way of modern interpretations into waka; a.k.a. what's in it?
-- Identify compression patterns for poetic thought
-- Explore constraints and expression in 31-syllable form
-
----
-
 ## **Basics of WAKA**
 
 Classical Japanese Poetry, <span class="red">WA</span><span class="blue">KA</span>
@@ -88,16 +80,16 @@ JPN_ONLY_END -->
 
 ---
 
-### Is 31-Syllable Form the Closet? No, it's not!
+### **Poetic ideas change into 31-Syllable Form**
 
 - The 31-syllable is the final form of the poem, not the initial one.
 - The constraint of Waka is the construction of 5,7,5,7,7 syllables.
 - Poets create a poem under the 5 segments of 5,7,5,7,7 syllables constraint.
-- So, first poets seek words fitting each segment, then they combine them into a 31-syllable poem.
+- It is the first step to shorten ideas to fit to 5 or 7 syllables.
 
 ---
 
-## Poetic Rules may include:
+### **Poetic Rules may include:**
 
 - Omission of grammatical elements
 - Inversion of word order
@@ -111,6 +103,14 @@ JPN_ONLY_END -->
 
 ---
 
+### **Goals**
+
+- Differences between waka and its translation
+- Identify compression patterns for poetic thought
+- Explore constraints and expression in 31-syllable form
+
+---
+
 ## **Material**
 
 - A) Kokinshu: a collection of 1000 waka poems
@@ -120,7 +120,7 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
-### Ten kinds of the Translations
+### **Ten kinds of the Translations**
 
 | No. | Translator                  | Year | Pages | Manuscript | Translation Style              |
 | --: | :-------------------------- | ---: | ----: | :--------- | :----------------------------- |
@@ -137,13 +137,23 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
-### 🌿 Steps of the Analysis
+### **Steps of the Analysis**
 
-✅ Step 1: 10 kinds of translation data sets compparing with an Original poem dataset.
-✅ Step 2: matching done by token codes based on WSLP (semantic principle codes)
-✅ Step 3: Basic statistics and Residual patterns.
-✅ Step 4: Differences between Translators / Seasonal Sections
-✅ Step 5: Topological pattern lists
+- Step 1: Prepare Kokinshu 1000 original dataset (OP).
+- Step 2: Prepare 10 kinds of translation datasets (CT).
+- Step 3: Divide both OP and CT sentences into tokens.
+- Step 4: Attach Meta codes based on WSLP (semantic principle codes) to each token.
+- Step 5: Compare OP with CT by Meta codes.
+- Step 6: Describe the predication construction patterns.
+- Step 7: Describe the noun phrase construction patterns.
+- Step 8: Modeling of poetic construction.
+
+<!--
+- Step 2: matching done by token codes based on WSLP (semantic principle codes)
+- Step 3: Basic statistics and Residual patterns.
+- Step 4: Differences between Translators / Seasonal Sections
+- Step 5: Topological pattern lists
+-->
 
 ---
 
@@ -171,23 +181,23 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
-## Methods
+## **Methods**
 
-- Using a parallel corpus of waka and modern Japanese translations
-- Align waka with contemporary paraphrases
+- Using a parallel corpus of waka (OP) and modern Japanese translations (CT)
+- Align waka (OP) with contemporary translations (CT)
 - Use phrase gloss and structured data
 - Analyze rule types and transformation limits
 - Identify compression patterns for poetic thought
 
 ---
 
-### Steps
+### **Goals**
 
-1. Calculating of the frequency of the conversion patterns
-2. Clustering of the conversion patterns:
-   - Grammatical, Lexical, Structural, Rhetorical etc.
-3. Modeling of the conversion patterns:
-   - Rule based, Statistical based etc.
+- Obtain some typical conversion patterns between OP and CT.
+  - Grammatical pattern, especially predicative elements.
+    i.e. tense, aspect, &larr; elements making a poem longer.
+  - Lexical construction such as proper nouns.
+  - Rhetorical techniques &rarr; such as implications.
 
 <!-- JPN_ONLY_START
 1. 高頻度の変換ルールをリストアップ
@@ -211,7 +221,7 @@ JPN_ONLY_END -->
 
 ---
 
-### Evaluation of Pattern Matching by Machine
+### **Parallel Comparison between OP and CT**
 
 Kokinshu No. 3 CT by kaneko
 
@@ -235,7 +245,7 @@ Spring has arrived, but where is that gentle haze drifting? Here in the Yoshino 
 
 ---
 
-### OP: Kokinshu No.3
+### **OP: Kokinshu No.3**
 
 <div class="dataset">
 1 KW000003 111 1 02 00 00 BG-01-5152-09-040-A はるがすみ はるがすみ 春霞 spring haze
@@ -260,7 +270,7 @@ Spring has arrived, but where is that gentle haze drifting? Here in the Yoshino 
 
 ---
 
-### CT: Kaneko No.3
+### **CT: Kaneko No.3**
 
 <div class="dataset">
 <span class="red">1 kaneko 0003 0 02 00 00 BG-01-1624-02-010-A 春 はる 春 spring</span>
@@ -285,25 +295,25 @@ Spring has arrived, but where is that gentle haze drifting? Here in the Yoshino 
 
 ---
 
-### Meta-code system
+### **Meta-code system**
 
 <div class="datasetlarge">
  BG-01-2030-01-030-A-かみ-神 (god)
-<span style="margin-left: 23mm;">&uarr;</span><span style="margin-left: 13mm;">&uarr;</span><span style="margin-left: 13mm;">&uarr;</span>
-<span style="margin-left: 26mm;"><span class="green">G</span></span><span style="margin-left: 20mm;"><span class="blue">F</span></span><span style="margin-left: 19mm;"><span class="red">E</span></span>
-<span style="margin-left: 23mm;">&darr;</span><span style="margin-left: 13mm;">&darr;</span><span style="margin-left: 13mm;">&darr;</span>
+<span style="margin-left: 49mm;">&uarr;</span><span style="margin-left: 13mm;">&uarr;</span><span style="margin-left: 10mm;">&uarr;</span>
+<span style="margin-left: 52mm;"><span class="green">G</span></span><span style="margin-left: 20mm;"><span class="blue">F</span></span><span style="margin-left: 16mm;"><span class="red">E</span></span>
+<span style="margin-left: 49mm;">&darr;</span><span style="margin-left: 13mm;">&darr;</span><span style="margin-left: 10mm;">&darr;</span>
  BG-01-2030-01-250-A-ほとけ-仏 (Buddha)
 </div>
 
-- <span class="green">G: Group match</span>
-- <span class="blue">F: Field match</span>
-- <span class="red">E: Exact match</span>
+- <span class="green">G: Group match</span>... 10 digits
+- <span class="blue">F: Field match</span>...... 13 digits
+- <span class="red">E: Exact match</span>..... 17 digits
 
 The three matching levels are judged by the length of BG-code digits.
 
 ---
 
-### Matching Diagram
+### **Matching Diagram**
 
 <div class="datasetsmall">
  +-------- number of pair
@@ -331,7 +341,7 @@ The three matching levels are judged by the length of BG-code digits.
 
 ---
 
-### Matched elements breakdown between OP and CT
+### **Elements breakdown between OP and CT**
 
 <div class="dataset">
 <span class="blue">OP(original poem; valid number of items)             = 16</span>
