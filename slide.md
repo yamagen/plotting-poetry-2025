@@ -186,31 +186,16 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ### **Goals**
 
-- Obtain some typical conversion patterns between OP and CT.
-  - Grammatical pattern, especially predicative elements.
-    i.e. tense, aspect, &larr; elements making a poem longer.
-  - Lexical construction such as proper nouns.
-  - Rhetorical techniques &rarr; such as implications.
+#### Obtain some typical conversion patterns between OP and CT.
 
-<!-- JPN_ONLY_START
-1. 高頻度の変換ルールをリストアップ
-- 1000首×10訳 = 1万件 の現代語訳があるため、まず高頻度の変換パターンを抽出
-  例: 「～してしまった」→「～にけり」が頻繁に出現するか？
-- 形態素解析を用いて、文法変化のパターン を統計的に分析
+- Grammatical pattern, especially predicative elements.
+  i.e. tense, aspect, &larr; elements making a poem longer.
+- Lexical construction such as proper nouns.
+- Rhetorical techniques &rarr; such as implications.
 
-2. 変換パターンのクラスタリング
+---
 
-- 文法変換（助詞の変更、動詞の時制変化）
-- 語彙変換（現代語 → 和歌語彙）
-- 構造変換（主語の省略、語順の変更）
-- 修辞技法（掛詞、縁語、比喩など）
-
-3. 変換ルールを機械学習でモデル化できるか検討
-
-- ルールベースの変換モデル（決定木やルールマイニング）
-- 統計的手法（n-gram分析で和歌に特徴的な表現を抽出）
-
-JPN_ONLY_END -->
+We will make the following comparison between OP and CT:
 
 ---
 
@@ -235,6 +220,10 @@ Gloss: spring----------------haze.arize---------where----Q------Yoshino--MtYoshi
 Spring has arrived, but where is that gentle haze drifting? Here in the Yoshino village, on Mount Yoshino, snow keeps falling and falling, and it shows no sign of spring at all.
 
 </div>
+
+---
+
+We anotated each poem and each translation as the following:
 
 ---
 
@@ -303,6 +292,16 @@ Spring has arrived, but where is that gentle haze drifting? Here in the Yoshino 
 - <span class="red">E: Exact match</span>..... 17 digits
 
 The three matching levels are judged by the length of BG-code digits.
+
+---
+
+### **code2match.c**
+
+match poem codes with translation codes:
+
+```
+% cat op_file.txt ct_file.txt | code2match -a
+```
 
 ---
 
@@ -414,4 +413,6 @@ Gap:                                             fabs(D-H)= 0.029
 
 ### **Reference**
 
+- Yamamoto, H., Hodošček, B., & Chen, X. (2024). Hachidaishu Part-of-Speech Dataset (1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.13940187
 - Yamamoto, H., Hodošček, B., & Chen, X. (2024). Kokinwakashu Hyoshaku by Motoomi Kaneko translation sentence vocabulary dataset (v1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.13942707
+- Hilofumi Yamamoto. Thesaurus for the Hachidaishu (ca. 905-1205) with the classification codes based on semantic principles, The Study of Japanese Linguistics, The Society of Japanese Linguistics, Vol. 5, No. 1, pp. 46-52, Jan. 2009.
