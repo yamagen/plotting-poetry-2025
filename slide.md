@@ -148,13 +148,6 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 - Step 7: Describe the noun phrase construction patterns.
 - Step 8: Modeling of poetic construction.
 
-<!--
-- Step 2: matching done by token codes based on WSLP (semantic principle codes)
-- Step 3: Basic statistics and Residual patterns.
-- Step 4: Differences between Translators / Seasonal Sections
-- Step 5: Topological pattern lists
--->
-
 ---
 
 ## Computer programms
@@ -365,7 +358,7 @@ Gap:                                             fabs(D-H)= 0.029
 
 ---
 
-### Four Seasons Sections of Kokin Wakashū
+### **Four Seasons Sections of Kokin Wakashū**
 
 | Section | Volume Number | Range        | Corresponding Numbers | Number of Poems |
 | ------- | ------------- | ------------ | --------------------- | --------------- |
@@ -378,7 +371,7 @@ Gap:                                             fabs(D-H)= 0.029
 
 ---
 
-## Results
+## **Results**
 
 - Identify and classify poetic strategies
 - Analyze how poetic thought is transfigured
@@ -388,7 +381,7 @@ Gap:                                             fabs(D-H)= 0.029
 
 ---
 
-## Discussion
+## **Discussion**
 
 - Explore poetic compression in modern Japanese
 - Analyze constraints in poetic expression
@@ -397,7 +390,7 @@ Gap:                                             fabs(D-H)= 0.029
 
 ---
 
-## Conclusion
+## **Conclusion**
 
 - Waka as a lens for poetic thought
 - Compression as a creative constraint
@@ -406,13 +399,19 @@ Gap:                                             fabs(D-H)= 0.029
 
 ---
 
-### Predicate sections
+### **Predicate sections**
 
 - The simplest verb form can express variously.
 
 ---
 
-### Content words
+### **Content words**
 
 - No modifications.
 - Noun and adjective expand images
+
+---
+
+### **Reference**
+
+- Yamamoto, H., Hodošček, B., & Chen, X. (2024). Kokinwakashu Hyoshaku by Motoomi Kaneko translation sentence vocabulary dataset (v1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.13942707
