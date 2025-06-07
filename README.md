@@ -8,15 +8,12 @@ This repository contains the presentation slides for the **Plotting Poetry 2025*
 
 ## 🔗 View the slides
 
-Simple: 👉 [https://yamagen.github.io/plotting-poetry-2025/](https://yamagen.github.io/plotting-poetry-2025/slide.html)
-
-Eco system: 👉 [https://yamagen.github.io/plotting-poetry-2025/](https://yamagen.github.io/plotting-poetry-2025/slide_ecosystem_added.html)
+### 👉 [https://yamagen.github.io/plotting-poetry-2025/](https://yamagen.github.io/plotting-poetry-2025/slide.html)
 
 ## 📂 Contents
 
 - `slide.md`: Source file for the presentation (Marp-flavored Markdown)
 - `index.html`: Compiled HTML version of the slides (auto-published to GitHub Pages)
-- `data/`: (Optional) Structured waka glosses, transformation rules, and examples
 
 ## 📌 Tools
 
