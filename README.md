@@ -17,7 +17,7 @@ This repository contains the presentation slides for the **[Plotting Poetry 2025
 
 ## 📌 Tools
 
-- [code2match](https://https://github.com/yamagen/code2match/): Tools for matching wslp code to demonstrate the differences between Orignal poems(OP) and Contemporary translations(CT).
+- [code2match](https://github.com/yamagen/code2match/): Tools for matching wslp code to demonstrate the differences between Orignal poems(OP) and Contemporary translations(CT).
 - [Marp CLI](https://github.com/marp-team/marp-cli): Markdown-based slide generator
 - [GitHub Pages](https://pages.github.com/): For live publishing
 
