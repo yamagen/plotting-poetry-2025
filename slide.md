@@ -333,9 +333,9 @@ match poem codes with translation codes:
 
 ---
 
-#### **code2match**
+### code2match -h
 
-```
+<div class="dataset">
 % code2match [-ahv] file....
   -a   print all data
   -b   print between check
@@ -347,14 +347,39 @@ match poem codes with translation codes:
   -l   print token list table
   -o   print original poem out
   -p   print pair token table
-  -r   print residual
+  -r   <span class="red">print residual</span>
   -s   print valid on
   -t   print title
   -u   print unmatched portion
   -h   print this help
   -v   print code2match version
 (c) 2025 H. Yamamoto yamagen@ila.titech.ac.jp
-```
+</div>
+
+---
+
+### **Residual**
+
+<div class="dataset">
+Residual ====================================================
+CT A--B--C--D--E--F--G--H------------------
+7 0 1 0 -1 64 0 0 BG-08-0064-16-010-A て て
+10 0 1 0 -1 61 0 0 BG-08-0061-02-010-A が が
+12 0 1 0 -1 16 0 0 BG-01-1624-05-010-A 冬 冬
+13 0 1 0 -1 16 0 0 BG-01-1612-01-060-A 時分 時分
+14 0 1 0 -1 61 0 0 BG-08-0061-01-010-A から から
+15 0 1 0 -1 57 0 0 BG-03-1000-01-010-A この この
+17 0 1 0 -1 61 0 0 BG-08-0061-08-010-A へ へ
+21 0 1 0 -1 18 0 0 BG-03-1600-03-020-A 頻り 頻り
+22 0 1 0 -1 72 0 0 BG-08-0072-02-010-A に に
+33 0 1 0 -1 47 3 7 BG-02-3420-01-010-A し する
+36 0 1 0 -1 55 0 0 BG-03-1200-03-060-A 一向 一向
+37 1 1 0 -1 47 8 2 BG-02-1624-02-110-A 春めか 春めく
+42 1 1 0 -1 74 59 1 BG-03-1200-02-090-A ぬ ぬ
+45 0 1 0 -1 21 0 0 BG-01-1010-01-020-A こと こと
+46 1 1 0 -1 69 0 0 BG-08-0069-30-010-A よ よ
+47 0 1 0 -1 61 0 0 BG-08-0061-03-010-A へ へ
+</div>
 
 ---
 
@@ -416,10 +441,41 @@ Gap:                                             fabs(D-H)= 0.029
 
 ## **Conclusion**
 
-- Waka as a lens for poetic thought
-- Compression as a creative constraint
-- Future research directions
-- Implications for translation studies
+The ways to compression of Poetic Thought
+Into 31-Syllable Form (the Closet of skeleton)
+
+---
+
+### **Word Types**
+
+- Chinese word construction techniques applied to Waka
+- Two chinese characters combination methods.
+
+  - person + action (e.g., 人言, 人来, a person speaks, a person comes)
+    ... not: 人の言葉, 人の来る, someone speaks words, someone comes somewhere
+  - noun + noun (e.g., 山川, 山野, mountain and river, mountain and field)
+    ... not: 山の川, 山の野, mountain's river, mountain's field
+  - noun modifier + modified noun (e.g., 朝露, 白露, morning dew, white dew)
+    ... not: 朝に降りている露, 白く光った露, morning's dew, white dew
+
+&rarr; These are one of the <span class="red">compression methods</span> in Waka.
+
+<!-- JPN
+  川なども)。又これらは他品詞に派生もするのである(浅し↓浅緑・浅み、古↓古す・古し・古枝・古里等、露↓露けし・朝露・下露・白露・露霜等々)。このように、
+
+- このように、万葉に比べて古今の語は、語基の種類は多くないが、同一語基を多くの角度から多彩に用いているといえよう。
+- そして、「朝に降りている露」を「朝露」、「白く光った露」を「白露」というように、短い語として自立させる。
+- これも一種の圧縮法である。
+- 一首の中に封じ込めるには、短く一語とした方がひきしまるし、多くのことが述べられるからである。
+- こういう自在な造語法は、漢語の造語法にならったといえよう。
+- 漢語は和語化され(血涙→血の涙)、和語は漢語的造語法で歌語らしく創り出され、圧縮される。
+- しかも、純粋の接辞(～さ、～げ、～さぶ、～ばせ等)による造語は少ない。(疑問認にみられるくらいである――幾つ・幾ら・いつか・いつこ・いっち・いつしか・いつら・いつれ等)。
+- このことからも、古今集の語構成が、自立語基を結合して循環的に組成されていることがわかる。
+- 同一語をいかに美しく組み合わせて使うかに腐心していたようである。
+- このようにして出来上った語が、広義の歌語といわれるものであろう。
+- 古今集の一語一語が、選び抜かれた、美しくかっ意味深い語であるといえよう。
+
+JPN -->
 
 ---
 
@@ -433,6 +489,10 @@ Gap:                                             fabs(D-H)= 0.029
 
 - No modifications.
 - Noun and adjective expand images
+
+---
+
+### **Future research directions**
 
 ---
 
