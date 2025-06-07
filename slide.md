@@ -37,7 +37,11 @@ Classical Japanese Poetry, <span class="red">WA</span><span class="blue">KA</spa
 ### **Early Established Waka**
 
 - The Man'yoshu: est. around 7-8th century in Chinese notation.
+  written in Chinese characters, but read in Japanese.
 - The Kokinshu: est. ca. 905 in Japanese notation.
+  written in Japanese characters, and read in Japanese.
+
+- <span class="red">Before the Man'yoshu, Kanshi (Chinese poetry) was the dominant form. </span>
 
 ---
 
@@ -103,11 +107,19 @@ JPN_ONLY_END -->
 
 ---
 
-### **Goals**
+### **Obtain some typical conversion patterns from both**
 
-- Differences between waka and its translation
-- Identify compression patterns for poetic thought
-- Explore constraints and expression in 31-syllable form
+- OP: original poems, and
+- CT: contemporary translations
+
+---
+
+### **Through the comparison of OP and CT, we can obtain:**
+
+- Grammatical pattern, especially predicative elements.
+  i.e. tense, aspect, &larr; elements making a poem longer.
+- Lexical construction such as proper nouns.
+- Rhetorical techniques &rarr; such as implications.
 
 ---
 
@@ -150,7 +162,7 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
-## Computer programms
+## **Computer programms**
 
 - Align waka with contemporary paraphrases
 - Use phrase gloss and structured data
@@ -158,7 +170,7 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
-## Challenges
+## **Challenges**
 
 - Literal vs. interpretive gaps
 - Compression loss in reverse mapping
@@ -166,7 +178,7 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
-## Toward a Model
+## **Toward a Model**
 
 - Create typology of transformation rules
 - Visualize linguistic constraints
@@ -183,15 +195,6 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 - Identify compression patterns for poetic thought
 
 ---
-
-### **Goals**
-
-#### Obtain some typical conversion patterns between OP and CT.
-
-- Grammatical pattern, especially predicative elements.
-  i.e. tense, aspect, &larr; elements making a poem longer.
-- Lexical construction such as proper nouns.
-- Rhetorical techniques &rarr; such as implications.
 
 ---
 
@@ -441,8 +444,12 @@ Gap:                                             fabs(D-H)= 0.029
 
 ## **Conclusion**
 
-The ways to compression of Poetic Thought
+The ways of the compression of Poetic Thought
 Into 31-Syllable Form (the Closet of skeleton)
+
+- Word Compression
+- Predicate Compression
+- Shortening by removing grammatical elements
 
 ---
 
@@ -492,12 +499,22 @@ JPN -->
 
 ---
 
+### **Remarks**
+
+- The 31-syllable form is not a fixed structure but a flexible framework.
+- Poets use the 31-syllable form to express their emotions and thoughts in a concise manner.
+- Use of hypernyms to indicate the general meaning of the poem.
+- Use of generic/shorter nouns (hana = flower) rather than specific nouns (hana tachibana = the flower of orange).
+
+---
+
 ### **Future research directions**
 
 ---
 
 ### **Reference**
 
+- Kamitani, Kaoru, (1999). Kokinwakashu yogo no goiteki kenkyu (Lexical Study of Kokinwakashu vocabulary), Izumi Shoten, Osaka.
 - Yamamoto, H., Hodošček, B., & Chen, X. (2024). Hachidaishu Part-of-Speech Dataset (1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.13940187
 - Yamamoto, H., Hodošček, B., & Chen, X. (2024). Kokinwakashu Hyoshaku by Motoomi Kaneko translation sentence vocabulary dataset (v1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.13942707
 - Hilofumi Yamamoto. Thesaurus for the Hachidaishu (ca. 905-1205) with the classification codes based on semantic principles, The Study of Japanese Linguistics, The Society of Japanese Linguistics, Vol. 5, No. 1, pp. 46-52, Jan. 2009.
