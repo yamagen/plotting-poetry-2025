@@ -1,6 +1,6 @@
 # Plotting Poetry 2025
 
-This repository contains the presentation slides for the **Plotting Poetry 2025** conference talk:
+This repository contains the presentation slides for the **[Plotting Poetry 2025](https://plottingpoetry.org/conference/2025prague/programme)** conference talk:
 
 **"Transforming Poetic Thought into Waka"**
 
@@ -17,6 +17,7 @@ This repository contains the presentation slides for the **Plotting Poetry 2025*
 
 ## 📌 Tools
 
+- [code2match](https://https://github.com/yamagen/code2match/): Tools for matching wslp code to demonstrate the differences between Orignal poems(OP) and Contemporary translations(CT).
 - [Marp CLI](https://github.com/marp-team/marp-cli): Markdown-based slide generator
 - [GitHub Pages](https://pages.github.com/): For live publishing
 
