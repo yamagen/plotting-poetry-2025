@@ -8,7 +8,7 @@ This repository contains the presentation slides for the **[Plotting Poetry 2025
 
 ## 🔗 View the slides
 
-### 👉 [https://yamagen.github.io/plotting-poetry-2025/](https://yamagen.github.io/plotting-poetry-2025/slide.html)
+### 👉 [Slide](https://yamagen.github.io/plotting-poetry-2025/slide.html)
 
 ## 📂 Contents
 
