@@ -149,6 +149,14 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
+## **Methods**
+
+- Using a parallel corpus of waka (OP) and modern Japanese translations (CT)
+- Align waka (OP) with contemporary translations (CT)
+- Use phrase gloss and structured data
+
+---
+
 ### **Steps of the Analysis**
 
 - Step 1: Prepare Kokinshu 1000 original dataset (OP).
@@ -159,42 +167,6 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 - Step 6: Describe the predication construction patterns.
 - Step 7: Describe the noun phrase construction patterns.
 - Step 8: Modeling of poetic construction.
-
----
-
-## **Computer programms**
-
-- Align waka with contemporary paraphrases
-- Use phrase gloss and structured data
-- Analyze rule types and transformation limits
-
----
-
-## **Challenges**
-
-- Literal vs. interpretive gaps
-- Compression loss in reverse mapping
-- Ambiguity in source expressions
-
----
-
-## **Toward a Model**
-
-- Create typology of transformation rules
-- Visualize linguistic constraints
-- Evaluate poetic fidelity and transformation cost
-
----
-
-## **Methods**
-
-- Using a parallel corpus of waka (OP) and modern Japanese translations (CT)
-- Align waka (OP) with contemporary translations (CT)
-- Use phrase gloss and structured data
-- Analyze rule types and transformation limits
-- Identify compression patterns for poetic thought
-
----
 
 ---
 
@@ -298,9 +270,40 @@ The three matching levels are judged by the length of BG-code digits.
 
 ---
 
+## **Code Categories with English annotation**
+
+```
+BG-01-1000-00-000-X:こそあど%demonstrative_pronoun
+BG-01-1100-00-000-X:類・例%class,kinds
+BG-02-1000-00-000-X:抽象的関係%abstract_relation
+BG-02-1110-00-000-X:関係%relation
+BG-03-3100-00-000-X:ことば・言語%language_and_speech
+BG-03-3400-00-000-X:身上%personal_affairs
+BG-04-1100-00-000-X:接続%conjunction
+BG-05-0000-00-000-X:接頭辞%prefix
+BG-06-0000-00-000-X:接中辞%infix
+BG-07-0000-00-000-X:接尾辞%suffix
+BG-08-0061-00-000-X:助詞-格助詞-一般%case_particle
+BG-09-0000-00-000-X:助動詞%auxiliary_verb
+BG-10-0000-00-000-X:補助動詞・補助形容詞%auxiliary_verb_and_auxiliary_adjective
+BG-11-0000-00-000-X:関係詞%relative_pronoun
+BG-12-0000-00-000-X:語尾%word_endings
+BG-13-0000-00-000-X:前置詞・介詞%preposition_and_postposition
+BG-14-0000-00-000-X:意味不明%meaning_unknown
+BG-15-0000-00-000-X:固有名詞%proper_noun
+BG-16-0000-01-000-X:句点読点%punctuation
+BG-17-0000-00-000-X:掛詞処理%wordplay_handling
+BG-18-0000-00-000-X:助数詞%counting
+```
+
+---
+
+## **Computer Tools**
+
 ### **code2match.c**
 
-match poem codes with translation codes:
+- Align waka with contemporary translations
+- github: [https://github.com/yamagen/code2match](https://github.com/yamagen/code2match)
 
 ```
 % cat op_file.txt ct_file.txt | code2match -a
@@ -308,7 +311,32 @@ match poem codes with translation codes:
 
 ---
 
-### **Matching Diagram**
+### code2match -h
+
+<div class="dataset">
+% code2match [-ahv] file....
+  -a   print all data
+  -b   print between check
+  -c   print calculation table
+  -d   <span class="red">print predicate part out</span>
+  -e   once matched out (bag of words option)
+       use it with other options
+  -i   print calculation in line style
+  -l   print token list table
+  -o   <span class="red">print original poem out</span>
+  -p   print pair token table
+  -r   <span class="red">print residual</span>
+  -s   print valid on
+  -t   print title
+  -u   print unmatched portion
+  -h   print this help
+  -v   print code2match version
+(c) 2025 H. Yamamoto yamagen@ila.titech.ac.jp
+</div>
+
+---
+
+### **Pair Token Table: -p**
 
 <div class="datasetsmall">
  +-------- number of pair
@@ -336,35 +364,9 @@ match poem codes with translation codes:
 
 ---
 
-### code2match -h
+### **Print Residual: -r**
 
 <div class="dataset">
-% code2match [-ahv] file....
-  -a   print all data
-  -b   print between check
-  -c   print calculation table
-  -d   print predicate part out
-  -e   once matched out (bag of words option)
-       use it with other options
-  -i   print calculation in line style
-  -l   print token list table
-  -o   print original poem out
-  -p   print pair token table
-  -r   <span class="red">print residual</span>
-  -s   print valid on
-  -t   print title
-  -u   print unmatched portion
-  -h   print this help
-  -v   print code2match version
-(c) 2025 H. Yamamoto yamagen@ila.titech.ac.jp
-</div>
-
----
-
-### **Residual**
-
-<div class="dataset">
-Residual ====================================================
 CT A--B--C--D--E--F--G--H------------------
 7 0 1 0 -1 64 0 0 BG-08-0064-16-010-A て て
 10 0 1 0 -1 61 0 0 BG-08-0061-02-010-A が が
@@ -386,7 +388,7 @@ CT A--B--C--D--E--F--G--H------------------
 
 ---
 
-### **Elements breakdown between OP and CT**
+### **Elements breakdown between OP and CT: -c**
 
 <div class="dataset">
 <span class="blue">OP(original poem; valid number of items)             = 16</span>
