@@ -19,18 +19,24 @@ color: "#333"
 
 ---
 
-## **Basics of WAKA**
+## Basics of WAKA
 
 Classical Japanese Poetry, <span class="red">WA</span><span class="blue">KA</span>
 
 - <span class="red">WA</span> &rarr; Japanese / Japanese style
 - <span class="blue">KA</span> &rarr; Song
 
+![bg height fit:100%](./images/harugasumi2.webp)
+
+<!-- JPN_ONLY_START
+![right :30%](./images/harugasumi.jpg)
+<img src="./images/harugasumi.jpg" height="300mm" />
 <div style="text-align: right;">
     Spring Haze
 <img src="./images/harugasumi2.webp" height="300mm" />
 <img src="./images/harugasumi.jpg" height="300mm" />
 </div>
+ -->
 
 ---
 
@@ -54,11 +60,34 @@ Classical Japanese Poetry, <span class="red">WA</span><span class="blue">KA</spa
 JPN_ONLY_END -->
 
 - Include only 31 syllables with 5,7,5,7,7 sounds
-- Express natural views and emotions in a simple sentence.
+
+<table class="large">
+<tr><th>Japanese</th><th> Romaji</th><th>English Translation</th></tr>
+<tr><td> 5 うめがえに     </td><td> ume ga e ni         </td><td> at the plum branch   </td></tr>
+<tr><td> 7 きゐるうぐひす </td><td> kiiru uguhisu       </td><td> warbler came         </td></tr>
+<tr><td> 5 はるかけて     </td><td> haru kakete         </td><td> cries over spring    </td></tr>
+<tr><td> 7 なけどもいまだ </td><td> nake domo imada     </td><td> even though it cries </td></tr>
+<tr><td> 7 ゆきはふりつつ </td><td> yuki ha furi tsutsu </td><td> snow keeps falling   </td></tr>
+</table>
+
+Theme: <span class="red">Waiting for the arrival of spring</span>
+
+<!-- JPN_ONLY_START
+梅の枝に来馴れている鴬が、冬時分からこの春へかけて頻りに鳴くけれども、未だ雪は降り降りして、一向春めかぬことよ。
+-->
+
+---
+
+### **Style and Rhetorics**
+
+- Express natural views and emotions in a simple sentence:
+
+  - plum branch, warbler, spring, snow
+
 - Use of rhetorics to create a poetic atmosphere:
-- Pun (kakekotoba),
-- Pillow words (makurakotoba), and
-- Introductory words (o-kotoba)
+  - Pun (kakekotoba)
+  - Pillow words (makurakotoba)
+  - Introductory words (o-kotoba)
 
 ---
 
@@ -193,7 +222,6 @@ Gloss: spring----------------haze.arize---------where----Q------Yoshino--MtYoshi
        snow--fallfall-----------------------
 -----------
 Spring has arrived, but where is that gentle haze drifting? Here in the Yoshino village, on Mount Yoshino, snow keeps falling and falling, and it shows no sign of spring at all.
-
 </div>
 
 ---

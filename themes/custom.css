@@ -70,12 +70,21 @@ pre {
 }
 
 /* 表の基本スタイル */
-table {
+/*
+table.normal {
   border-collapse: collapse;
   font-size: 0.8em;
   width: 100%;
   margin: 1em 0;
 }
+
+table.large {
+  border-collapse: collapse;
+  font-size: 1.2em;
+  width: 100%;
+  margin: 1em 0;
+}
+*/
 
 .datasetlarge {
   font-family: monospace;
@@ -104,19 +113,25 @@ table {
   padding: 0;
 }
 
-/* 表の境界線 */
+/* 共通スタイル */
 th,
 td {
   border: 1px solid #ddd;
   padding: 0.5em;
 }
 
-/* 見出し行の背景 */
-th {
+/* 通常テーブルの見出しに色をつける */
+table:not(.large) th {
   background-color: #97d0d0;
   font-weight: bold;
 }
 
-section table tr:nth-child(even) {
-  background-color: #c0d0d0 !important;
+/* 偶数行のストライプ背景も、.large がないときだけ */
+table:not(.large) tr:nth-child(even) {
+  background-color: #c0d0d0;
+}
+
+/* .large テーブル全体にだけ大きいフォント */
+table.large {
+  font-size: 1.2em;
 }
