@@ -301,6 +301,31 @@ The three matching levels are judged by the length of BG-code digits.
 ## **Code Categories with English annotation**
 
 ```
+BG-01-1000-00-000-X:demonstrative_pronoun
+BG-01-1100-00-000-X:class,kinds
+BG-02-1000-00-000-X:abstract_relation
+BG-02-1110-00-000-X:relation
+BG-03-3100-00-000-X:language_and_speech
+BG-03-3400-00-000-X:personal_affairs
+BG-04-1100-00-000-X:conjunction
+BG-05-0000-00-000-X:prefix
+BG-06-0000-00-000-X:infix
+BG-07-0000-00-000-X:suffix
+BG-08-0061-00-000-X:case_particle
+BG-09-0000-00-000-X:auxiliary_verb
+BG-10-0000-00-000-X:auxiliary_verb_and_auxiliary_adjective
+BG-11-0000-00-000-X:relative_pronoun
+BG-12-0000-00-000-X:word_endings
+BG-13-0000-00-000-X:preposition_and_postposition
+BG-14-0000-00-000-X:meaning_unknown
+BG-15-0000-00-000-X:proper_noun
+BG-16-0000-01-000-X:punctuation
+BG-17-0000-00-000-X:wordplay_handling
+BG-18-0000-00-000-X:counting
+```
+
+<!--
+```
 BG-01-1000-00-000-X:こそあど%demonstrative_pronoun
 BG-01-1100-00-000-X:類・例%class,kinds
 BG-02-1000-00-000-X:抽象的関係%abstract_relation
@@ -323,6 +348,7 @@ BG-16-0000-01-000-X:句点読点%punctuation
 BG-17-0000-00-000-X:掛詞処理%wordplay_handling
 BG-18-0000-00-000-X:助数詞%counting
 ```
+-->
 
 ---
 
@@ -394,6 +420,8 @@ BG-18-0000-00-000-X:助数詞%counting
 
 ### **Print Residual: -r**
 
+Residual tokens reveal what the translation needs to say that the original poem leaves unsaid.
+
 <div class="dataset">
 CT A--B--C--D--E--F--G--H------------------
 7 0 1 0 -1 64 0 0 BG-08-0064-16-010-A て て
@@ -437,6 +465,22 @@ P2(ratio of U paraphrased)                       (A-P1)*U = 0.080
 H (theoretical value)                             1-16/39 = 0.590
 Gap:                                             fabs(D-H)= 0.029
 </div>
+
+---
+
+### **Predicate alignments between OP and CT: -d**
+
+```
+$ cat data/kokin/0005.db.txt data/kaneko/0005.db.txt | src/code2match -d
+PRED: kaneko   5 [09|かけ|て|なけ|ども|13] => [19|かけ|て|頻り|に|鳴く|けれども|24]
+PRED: kaneko   5 [18|ふり|つつ|19] => [30|降り降り|し|て|34]
+
+$ cat data/kokin/0007.db.txt data/kaneko/0007.db.txt | src/code2match -d
+PRED: kaneko   7 [12|きえあへ|ぬ|15] => [20|消え|て|果て|ず|25]
+PRED: kaneko   7 [22|みゆ|らむ|23] => [41|見える|の|で|あろ|う|46]
+
+                 op predicate         ct predicate
+```
 
 ---
 
