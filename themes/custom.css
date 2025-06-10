@@ -70,21 +70,6 @@ pre {
 }
 
 /* 表の基本スタイル */
-/*
-table.normal {
-  border-collapse: collapse;
-  font-size: 0.8em;
-  width: 100%;
-  margin: 1em 0;
-}
-
-table.large {
-  border-collapse: collapse;
-  font-size: 1.2em;
-  width: 100%;
-  margin: 1em 0;
-}
-*/
 
 .datasetlarge {
   font-family: monospace;
@@ -118,6 +103,7 @@ th,
 td {
   border: 1px solid #ddd;
   padding: 0.5em;
+  font-size: 0.8em;
 }
 
 /* 通常テーブルの見出しに色をつける */
@@ -133,5 +119,6 @@ table:not(.large) tr:nth-child(even) {
 
 /* .large テーブル全体にだけ大きいフォント */
 table.large {
+  padding: 0.5em;
   font-size: 1.2em;
 }

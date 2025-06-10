@@ -62,12 +62,12 @@ JPN_ONLY_END -->
 - Include only 31 syllables with 5,7,5,7,7 sounds
 
 <table class="large">
-<tr><th>Japanese</th><th> Romaji</th><th>English Translation</th></tr>
-<tr><td> 5 うめがえに     </td><td> ume ga e ni         </td><td> at the plum branch   </td></tr>
-<tr><td> 7 きゐるうぐひす </td><td> kiiru uguhisu       </td><td> warbler came         </td></tr>
-<tr><td> 5 はるかけて     </td><td> haru kakete         </td><td> cries over spring    </td></tr>
-<tr><td> 7 なけどもいまだ </td><td> nake domo imada     </td><td> even though it cries </td></tr>
-<tr><td> 7 ゆきはふりつつ </td><td> yuki ha furi tsutsu </td><td> snow keeps falling   </td></tr>
+<tr><th></th><th>Japanese</th><th> Romaji</th><th>English Translation</th></tr>
+<tr><td> 5</td><td> うめがえに     </td><td> ume ga e ni         </td><td> at the plum branch   </td></tr>
+<tr><td> 7</td><td> きゐるうぐひす </td><td> kiiru uguhisu       </td><td> warbler came         </td></tr>
+<tr><td> 5</td><td> はるかけて     </td><td> haru kakete         </td><td> cries over spring    </td></tr>
+<tr><td> 7</td><td> なけどもいまだ </td><td> nake domo imada     </td><td> even though it cries </td></tr>
+<tr><td> 7</td><td> ゆきはふりつつ </td><td> yuki ha furi tsutsu </td><td> snow keeps falling   </td></tr>
 </table>
 
 Theme: <span class="red">Waiting for the arrival of spring</span>
@@ -93,13 +93,21 @@ Theme: <span class="red">Waiting for the arrival of spring</span>
 
 ### **Preface of Kokinshū: Kanajo**
 
-    やまとうたは、人の心を種として、よろづの言の葉とぞなれりける。
-    世の中にある人、ことわざ繁きものなれば、心に思ふことを、見るもの聞くものにつけて、言ひ出せるなり。
+<div class="dataset">
+やまとうたは、人の心を種として、
+<span class="red">よろづの言の葉とぞなれりける</span>。
+世の中にある人、ことわざ繁きものなれば、
+<span class="red">心に思ふことを、見るもの聞くものにつけて</span>、言ひ出せるなり。
+</div>
 
-    Japanese poetry (yamato-uta) takes the human heart as its seed, and from it
-    grows a myriad of words and leaves. Since people living in this world are
-    surrounded by countless events, they express what they feel in their hearts
-    by attaching it to the things they see and hear.
+<div class="dataset">
+Japanese poetry (yamato-uta) takes the human heart as its seed, 
+and from it grows <span class="red">a myriad of words and leaves</span>.
+Since people living in this world are
+surrounded by countless events,
+they express what they feel in their hearts
+<span class="red">by attaching it to the things they see and hear</span>.
+</div>
 
 ---
 
@@ -113,7 +121,7 @@ Theme: <span class="red">Waiting for the arrival of spring</span>
 
 ---
 
-### **Poetic ideas change into 31-Syllable Form**
+### **Poetic ideas pack into 31-Syllable Form**
 
 - The 31-syllable is the final form of the poem, not the initial one.
 - The constraint of Waka is the construction of 5,7,5,7,7 syllables.
