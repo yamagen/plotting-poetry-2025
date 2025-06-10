@@ -164,16 +164,27 @@ they express what they feel in their hearts
 
 - A) Kokinshu: a collection of 1000 waka poems
 - B) Modern Japanese translations: 10 sets of translations
-
-Parallel corpus of 1000 waka and 10 modern Japanese translations
+  &rarr; Parallel corpus: a dataset of original poems and their translations
 
 ---
 
-### **Ten sets of the Translations**
+### **A: Kokinshu 1000 original dataset (OP)**
+
+- **[Hachidaishu Classical Japanese Poetic Vocabulary Dataset](https://zenodo.org/records/14001396)** on Zenodo contains the original poems of the Hachidaishu (including the Kokinshu) and their semantic codes.
+
+- https://zenodo.org/records/14001396
+- Creators: Yamamoto, Hilofumi and Hodošček, Bor
+- Published: October 28, 2024 / Version v1.0.1
+- Hachidaishu classical Japanese poetic vocabulary dataset
+- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14001396.svg)](https://doi.org/10.5281/zenodo.14001396)
+
+---
+
+### **B: Ten sets of the Translations**
 
 | No. | Translator                  | Year | Pages | Manuscript | Translation Style              |
 | --: | :-------------------------- | ---: | ----: | :--------- | :----------------------------- |
-|  1. | Kaneko Motoomi              | 1933 | 1,105 | Teika      | Literal translation            |
+|  1. | Kaneko Motoomi\*            | 1933 | 1,105 | Teika      | Literal translation            |
 |  2. | Kubota Utsubo               | 1960 | 1,449 | Teika      | Literal translation            |
 |  3. | Matsuda Takeo               | 1968 | 1,998 | Teika      | Free translation               |
 |  4. | Ozawa Masao                 | 1971 |   544 | Teika      | Changes word order and grammar |
@@ -186,6 +197,17 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
+### **Kokinwakashu Hyoshaku by Motoomi Kaneko**
+
+- only Kaneko Motoomi's translation is available on Zenodo.
+- [Kokinwakashu Hyoshaku by Motoomi Kaneko translation sentence vocabulary dataset](https://zenodo.org/records/13942707)
+- https://zenodo.org/records/13942707
+- Hilofumi Yamamoto, Bor Hodošček, and Xudong Chen
+- Published October 16, 2024 / Version v1.0.1
+- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13942707.svg)](https://doi.org/10.5281/zenodo.13942707)
+
+---
+
 ## **Methods**
 
 - Using a parallel corpus of waka (OP) and modern Japanese translations (CT)
@@ -195,7 +217,7 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
-### **Steps of the Analysis**
+### **Steps**
 
 - Step 1: Prepare Kokinshu 1000 original dataset (OP).
 - Step 2: Prepare 10 kinds of translation datasets (CT).
@@ -212,11 +234,8 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 <span class="Largefont">CT - OP = Residual</span>
 
-We will subtract the elements of OP from the elements of CT.
-
----
-
-### **Step 1: Prepare Kokinshu 1000 original dataset (OP)**
+- We will subtract the elements of OP from the elements of CT.
+- In other words, we will find out what the CT needs to say that the OP does not say.
 
 ---
 
@@ -522,6 +541,71 @@ cat "$DIR1/$ID.db.txt" "$DIR2/$ID.db.txt" | ../src/code2match $OPTION
 
 ---
 
+### **Script: loop 1-1000 to run code2match**
+
+```
+
+#!/bin/sh
+
+# args: $1 = kokin directory name (e.g., kokin)
+#       $2 = contemporary translation directory name (e.g., kaneko)
+#       $3 = poem ID or range (e.g., 1, 100, or 1-100)
+#       $4 = optional argument for code2match (e.g., -d, -r)
+
+SRC=../src/code2match
+
+# judge if $3 is a range or a single number
+if echo "$3" | grep -qE '^[0-9]+-[0-9]+$'; then
+  START=$(echo "$3" | cut -d- -f1)
+  END=$(echo "$3" | cut -d- -f2)
+else
+  START=$3
+  END=$3
+fi
+
+# Loop through the specified range or single number
+for i in $(seq "$START" "$END"); do
+  FILE1="$1/$(printf '%04d' "$i").db.txt"
+  FILE2="$2/$(printf '%04d' "$i").db.txt"
+
+  if [ -n "$4" ]; then
+    cat "$FILE1" "$FILE2" | "$SRC" "$4"
+  else
+    cat "$FILE1" "$FILE2" | "$SRC"
+  fi
+done
+```
+
+---
+
+## The Compression of Poetic Thought into 31-Syllable Form
+
+- How to detect the compression of poetic thought into 31-syllable form?
+- Should we use multivariate analysis of the parallel corpus?
+- What variables do we need to consider?
+
+---
+
+> Even a statistician would hesitate to give a definitive answer here.
+
+→ We will observe the patterns of compression one by one.
+
+---
+
+So far, we've sketched out the problem—but how do we proceed?
+
+---
+
+## Asking AI? Not bad, but...
+
+- John Tukey's Exploratory Data Analysis (EDA) is a good start.
+- We will seek the evidence but more than that,
+
+**_→ we need the accountability of the results._**
+
+---
+
+<!--
 ### **Four Seasons Sections of Kokin Wakashū**
 
 | Section | Volume Number | Range        | Corresponding Numbers | Number of Poems |
@@ -532,6 +616,8 @@ cat "$DIR1/$ID.db.txt" "$DIR2/$ID.db.txt" | ../src/code2match $OPTION
 | Autumn  | Volume 4      | Autumn Upper | 125-179               | 55 poems        |
 | Autumn  | Volume 5      | Autumn Lower | 180-232               | 53 poems        |
 | Winter  | Volume 6      | Winter       | 233-249               | 17 poems        |
+
+-->
 
 ---
 
