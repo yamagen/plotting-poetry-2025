@@ -169,7 +169,7 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
-### **Ten kinds of the Translations**
+### **Ten sets of the Translations**
 
 | No. | Translator                  | Year | Pages | Manuscript | Translation Style              |
 | --: | :-------------------------- | ---: | ----: | :--------- | :----------------------------- |
@@ -190,7 +190,8 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 - Using a parallel corpus of waka (OP) and modern Japanese translations (CT)
 - Align waka (OP) with contemporary translations (CT)
-- Use phrase gloss and structured data
+- Using BG-code (word list semantic principle)
+  semantic principle codes to match words by 3 levels of categorical similarity.
 
 ---
 
@@ -207,7 +208,15 @@ Parallel corpus of 1000 waka and 10 modern Japanese translations
 
 ---
 
-We will make the following comparison between OP and CT:
+### **Subtraction**
+
+<span class="Largefont">CT - OP = Residual</span>
+
+We will subtract the elements of OP from the elements of CT.
+
+---
+
+### **Step 1: Prepare Kokinshu 1000 original dataset (OP)**
 
 ---
 
