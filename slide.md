@@ -484,6 +484,27 @@ PRED: kaneko   7 [22|みゆ|らむ|23] => [41|見える|の|で|あろ|う|46]
 
 ---
 
+### **Script to run code2match**
+
+```bash
+#!/bin/sh
+
+# This script compares two directories containing Waka poems and their translations.
+if [ "$#" -lt 3 ]; then
+  echo "Usage: $0 <dir1> <dir2> <id> [option]"
+  exit 1
+fi
+
+DIR1="$1"
+DIR2="$2"
+ID=$(printf "%04d" "$3")  # ID can be 1-9999, so we format it to 4 digits
+OPTION="$4"               # Optional argument for code2match
+
+cat "$DIR1/$ID.db.txt" "$DIR2/$ID.db.txt" | ../src/code2match $OPTION
+```
+
+---
+
 ### **Four Seasons Sections of Kokin Wakashū**
 
 | Section | Volume Number | Range        | Corresponding Numbers | Number of Poems |
