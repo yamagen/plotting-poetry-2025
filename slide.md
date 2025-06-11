@@ -785,12 +785,6 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 
 ## **Results**
 
-- Identify and classify poetic strategies
-- Analyze how poetic thought is transfigured
-- Uncover underlying rules (overt and covert)
-- Explore the implications of compression
-- Simulate the transformation process:
-
 ---
 
 ### **Word Types**
@@ -833,6 +827,12 @@ JPN -->
 - Discuss implications for translation and interpretation
 - Consider cultural and linguistic factors
 
+- Identify and classify poetic strategies
+- Analyze how poetic thought is transfigured
+- Uncover underlying rules (overt and covert)
+- Explore the implications of compression
+- Simulate the transformation process:
+
 ---
 
 ## **Conclusion**
@@ -848,7 +848,14 @@ Into 31-Syllable Form (the Closet of skeleton)
 
 ### **Future research directions**
 
-- Investigate the role of cultural and historical context in poetic compression
+- Explore the description of poetic compression in other languages and cultures
+- Invent new description methods for colloquial sentences
+  **_→Immediate grammar and syntax_**
+- Develop ecosystem for analyzing colloquial sentences in terms of:
+  **_→Semantic and syntactic compression_**
+  **_→A co-development environment for data ecosystems_**
+  **_→A collaborative platform for developing data ecosystems_**
+  **_→A co-creation environment of tools_**
 
 ---
 
