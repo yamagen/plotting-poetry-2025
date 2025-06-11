@@ -608,8 +608,6 @@ So far, we've sketched out the problem—but how do we proceed?
 
 **_→ we need the accountability of the results._**
 
----
-
 <!--
 ### **Four Seasons Sections of Kokin Wakashū**
 
@@ -622,7 +620,166 @@ So far, we've sketched out the problem—but how do we proceed?
 | Autumn  | Volume 5      | Autumn Lower | 180-232               | 53 poems        |
 | Winter  | Volume 6      | Winter       | 233-249               | 17 poems        |
 
+---
 -->
+
+---
+
+### **Content words**
+
+- No modifications.
+- Noun and adjective expand images
+
+---
+
+```
+$ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c | sort -nr | nl | head -20
+
+     1       41 BG-01-5530-12-010-A 花 flower
+     2       39 BG-01-1010-01-020-A こと thing
+     3       18 BG-01-1000-01-050-A それ that
+     4       16 BG-01-1000-03-010-A もの thing
+     5       13 BG-01-2000-06-080-A 人 person
+     6       11 BG-01-5520-20-040-A 梅 plum
+     7       10 BG-01-5520-20-100-A 桜 cherry
+     8       10 BG-01-1000-01-020-A これ this
+     9        9 BG-01-2000-01-300-A 自分 self
+    10        9 BG-01-1610-01-010-A 時 time
+    11        8 BG-01-1624-02-010-A 春 spring
+    12        6 BG-01-4000-01-080-A 物 thing
+    13        6 BG-01-1990-05-030-A さえ even
+    14        6 BG-01-1770-01-050-A 外 outside
+    15        6 BG-01-1642-01-030-A 昔 past
+    16        6 BG-01-1610-03-020-A 間 while
+    17        5 BG-01-5153-07-010-A 雪 snow
+    18        5 BG-01-3066-02-080-A はず should
+    19        5 BG-01-1770-01-030-A 内 inside
+    20        5 BG-01-1641-01-010-A 今 now
+```
+
+---
+
+### Nouns Avoided in Waka (Top 20 Residuals)
+
+- **Abstract & Deictic Nouns**
+
+  - 花 (flower), こと (thing), それ (that), もの (thing), これ (this)
+  - ⇒ Preference for concrete, symbolic imagery
+
+- **Time & Season Terms**
+
+  - 時 (time), 春 (spring), 昔 (past), 今 (now)
+  - ⇒ General time words give way to specific kigo
+
+- **Self & Agency**
+  - 人 (person), 自分 (self), 内 (inside), 外 (outside), はず (should)
+  - ⇒ Avoidance of explicit self-reference
+
+---
+
+### Key Insights & Future Directions
+
+- **Concrete / Symbolic Keywords**
+
+  - Waka retains vivid imagery; abstract/utility nouns are cut
+
+- **Poetic Temporal Expression**
+
+  - General time nouns are replaced by evocative seasonal or momentary phrases
+
+- **Anthology Bias**
+
+  - 梅 (plum), 桜 (cherry), 雪 (snow) less frequent in some collections
+
+---
+
+### Summary: Vocabulary Compression Patterns in Waka
+
+- Emphasis on concrete, highly symbolic keywords
+- Tendency to omit abstract, generic, or self-referential nouns and general temporal terms
+- Variation in how the same natural or seasonal motifs are treated across poems
+
+---
+
+### Key Insights for Future Research
+
+- Unexpectedly low direct frequencies of "ume" (plum), "sakura" (cherry), and "yuki" (snow)
+
+  → Often subsumed under the generic term “flower” or conveyed metaphorically
+
+- A promising focal point for comparative studies on thematic selection
+
+---
+
+### **Nature Themes as Residuals**
+
+- Specific names like 梅/plum・桜/cherry are often replaced by the generic 「花/flower」 in waka
+- 雪/snow is frequently rendered metaphorically (e.g. 「白き/shiroki 花/flower」) rather than named directly
+
+⇒ This substitutional practice leads to low direct frequencies for these terms
+
+---
+
+### **Remarks**
+
+- The 31-syllable form is not a fixed structure but a flexible framework.
+- Poets use the 31-syllable form to express their emotions and thoughts in a concise manner.
+- Preference for generic yet symbolic nouns (e.g., "hana" = flower) over specific ones (e.g., "hana tachibana").
+- Abstract, deictic, or self-referential nouns are often avoided.
+- Temporal references are not expressed through general time words but through poetic imagery.
+
+---
+
+#### Predicate Correspondence Analysis
+
+- **Command executed**
+
+```bash
+./c2m.sh kokin kaneko 1-100 -d \
+  | awk '{print length($0), $0}' \
+  | sort -nr \
+  | nl \
+  | head -10
+```
+
+- Extracted the top 10 longest predicate mappings between the Kokin and Kaneko corpora
+- Each line shows:
+  - Length in characters
+  - Original predicate span ([start|…|end])
+  - “⇒” Transformed predicate span in the waka context
+
+---
+
+<div class="datasetsmall">
+    $ ./c2m.sh kokin kaneko 1-100 -d| awk '{print length($0), $0}' | sort -nr | nl | head -10
+     1 148 PRED: kaneko  86 <span class="blue">[21|ふく|らむ|22]</span> => <span class="red">[07|吹か|ぬ|時|に|も|、|雪|の|よう|に|ひたすら|散る|が|、|それ|さえ|以て|惜しく|ある|もの|を|、|また|この上|どのように|烈しく|散れ|と|いっ|て|、|こう|も|風|が|吹く|の|で|あろ|う|57]</span>
+     2 111 PRED: kaneko  78 <span class="blue">[21|まちみ|て|ちら|ば|ちら|なむ|29]</span> => <span class="red">[35|待っ|て|み|て|、|いよいよ|来|ぬ|時|に|こそ|、|散る|なら|ば|お前|の|勝手|に|散っ|て|貰お|う|わ|64]</span>
+     3  98 PRED: kaneko  36 <span class="blue">[11|をり|て|かざさ|む|15] </span> => <span class="red">[27|折り取っ|て|、|我が|容貌|の|老|も|隠れる|か|どう|か|と|、|試し|に|挿頭し|て|みよ|う|58]</span>
+     4  96 PRED: kaneko  11 <span class="blue">[01|き|ぬ|04]</span> => <span class="red"> => [02|た|と|世間|の|人|は|いう|が|、|まだ|鴬|は|鳴い|て|い|ない|、|自分|は|何でも|鴬|の|鳴か|ぬ|31]</span>
+     5  94 PRED: kaneko  76 <span class="blue">[12|をしへよ|いき|て|うらみ|む|18]</span> => <span class="red">[32|教え|て|くれ|よ|、|然らば|、|そこ|に|行っ|て|思う存分|恨み|を|いお|う|52]</span>
+     6  91 PRED: kaneko  61 <span class="blue">[04|くははれ|る|05] </span> => <span class="red">[11|加わっ|て|長く|なっ|た|今年|なり|とも|、|人|の|心|に|は|なぜ|厭か|れ|は|せ|ぬ|39]</span>
+     7  85 PRED: kaneko  77 <span class="blue">[06|ちり|な|む|11] </span> => <span class="red">[08|散る|なら|ば|、|自分|も|一緒|に|何処|へ|なり|と|退散|し|て|しまお|う|32]</span>
+     8  85 PRED: kaneko  74 <span class="blue">[03|ちら|ば|ちら|なむ|ちら|ず|11]</span> => <span class="red">[07|散る|なら|ば|勝手|に|散っ|て|貰お|う|、|たとえ|散ら|ず|22]</span>
+     9  83 PRED: kaneko  45 <span class="blue">[00|くる|と|あく|と|めかれ|ぬ|ものを|12]</span> => <span class="red">[12|と|いっ|て|は|見|、|夜|が|明ける|と|いっ|て|31]</span>
+    10  80 PRED: kaneko  63 <span class="blue">[01|こ|ず|03]</span> => <span class="red">[07|来れ|ば|こそ|、|この|桜|を|花|と|は|見|ますれ|、|若し|今日|来|ぬ|28]</span>
+</div>
+
+---
+
+### **Key Observations**
+
+- Substantial expansions
+
+        Eg. “ふく|らむ” ⇒ “吹かぬ時に…雪のようにひたすら散るが…” (148 chars)
+
+- Frequent verb classes
+
+        Scattering (散る), blooming (咲く), seeing (見る), falling (降る)
+
+- Waka elaboration patterns
+
+  - Addition of temporal/conditional clauses
+  - Shift from simple verb forms to more poetic constructions
 
 ---
 
@@ -633,26 +790,6 @@ So far, we've sketched out the problem—but how do we proceed?
 - Uncover underlying rules (overt and covert)
 - Explore the implications of compression
 - Simulate the transformation process:
-
----
-
-## **Discussion**
-
-- Explore poetic compression in modern Japanese
-- Analyze constraints in poetic expression
-- Discuss implications for translation and interpretation
-- Consider cultural and linguistic factors
-
----
-
-## **Conclusion**
-
-The ways of the compression of Poetic Thought
-Into 31-Syllable Form (the Closet of skeleton)
-
-- Word Compression
-- Predicate Compression
-- Shortening by removing grammatical elements
 
 ---
 
@@ -689,29 +826,29 @@ JPN -->
 
 ---
 
-### **Predicate sections**
+## **Discussion**
 
-- The simplest verb form can express variously.
-
----
-
-### **Content words**
-
-- No modifications.
-- Noun and adjective expand images
+- Explore poetic compression in modern Japanese
+- Analyze constraints in poetic expression
+- Discuss implications for translation and interpretation
+- Consider cultural and linguistic factors
 
 ---
 
-### **Remarks**
+## **Conclusion**
 
-- The 31-syllable form is not a fixed structure but a flexible framework.
-- Poets use the 31-syllable form to express their emotions and thoughts in a concise manner.
-- Use of hypernyms to indicate the general meaning of the poem.
-- Use of generic/shorter nouns (hana = flower) rather than specific nouns (hana tachibana = the flower of orange).
+The ways of the compression of Poetic Thought
+Into 31-Syllable Form (the Closet of skeleton)
+
+- Word Compression
+- Predicate Compression
+- Shortening by removing grammatical elements
 
 ---
 
 ### **Future research directions**
+
+- Investigate the role of cultural and historical context in poetic compression
 
 ---
 
