@@ -212,10 +212,11 @@ they express what they feel in their hearts
 
 - Using a parallel corpus of waka (OP) and modern Japanese translations (CT)
 - Align waka (OP) with contemporary translations (CT)
-- Using BG-code (word list semantic principle)
+- Using BG-code (WLSP: word list semantic principle)
   semantic principle codes to match words by 3 levels of categorical similarity.
+  https://github.com/masayu-a/WLSP
 
----
+<!--
 
 ### **Steps**
 
@@ -228,7 +229,8 @@ they express what they feel in their hearts
 - Step 7: Describe the noun phrase construction patterns.
 - Step 8: Modeling of poetic construction.
 
----
+
+-->
 
 ### **Subtraction**
 
@@ -596,9 +598,12 @@ So far, we've sketched out the problem—but how do we proceed?
 
 ---
 
-## Asking AI? Not bad, but...
+## Asking AI? But how are we going to explain...
 
 - John Tukey's Exploratory Data Analysis (EDA) is a good start.
+
+  A foundational work in exploratory data analysis (EDA) that introduced the stem-and-leaf display as a way to visualize data distributions effectively.
+
 - We will seek the evidence but more than that,
 
 **_→ we need the accountability of the results._**
@@ -713,6 +718,8 @@ JPN -->
 ### **Reference**
 
 - Kamitani, Kaoru, (1999). Kokinwakashu yogo no goiteki kenkyu (Lexical Study of Kokinwakashu vocabulary), Izumi Shoten, Osaka.
+- Sachi Kato, Masayuki Asahara, Nanami Moriyama, Asami Ogiwara, and Makoto Yamazaki (2021). Opposite Information Annotation on Word List by Semantic Principles, Journal of Natural Language Processing, Vol.28, No.1, 60-81, DOI https://doi.org/10.5715/jnlp.28.60.
+- John W. Tukey, (1977). Exploratory Data Analysis, Addison-Wesley, Reading, MA.
 - Yamamoto, H., Hodošček, B., & Chen, X. (2024). Hachidaishu Part-of-Speech Dataset (1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.13940187
 - Yamamoto, H., Hodošček, B., & Chen, X. (2024). Kokinwakashu Hyoshaku by Motoomi Kaneko translation sentence vocabulary dataset (v1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.13942707
-- Hilofumi Yamamoto. Thesaurus for the Hachidaishu (ca. 905-1205) with the classification codes based on semantic principles, The Study of Japanese Linguistics, The Society of Japanese Linguistics, Vol. 5, No. 1, pp. 46-52, Jan. 2009.
+- Yamamoto, H., (2009). Thesaurus for the Hachidaishu (ca. 905-1205) with the classification codes based on semantic principles, The Study of Japanese Linguistics, The Society of Japanese Linguistics, Vol. 5, No. 1, pp. 46-52.
