@@ -506,6 +506,10 @@ Gap:                                             fabs(D-H)= 0.029
 
 ---
 
+![width fit:90%](./images/fig-298.png)
+
+---
+
 ### **Predicate alignments between OP and CT: -d**
 
 ```
@@ -859,11 +863,18 @@ Into 31-Syllable Form (the Closet of skeleton)
 
 ---
 
-### **Reference**
+### **Reference 1**
 
 - Kamitani, Kaoru, (1999). Kokinwakashu yogo no goiteki kenkyu (Lexical Study of Kokinwakashu vocabulary), Izumi Shoten, Osaka.
 - Sachi Kato, Masayuki Asahara, Nanami Moriyama, Asami Ogiwara, and Makoto Yamazaki (2021). Opposite Information Annotation on Word List by Semantic Principles, Journal of Natural Language Processing, Vol.28, No.1, 60-81, DOI https://doi.org/10.5715/jnlp.28.60.
 - John W. Tukey, (1977). Exploratory Data Analysis, Addison-Wesley, Reading, MA.
+- Yamamoto, H., (2009). Thesaurus for the Hachidaishu (ca. 905-1205) with the classification codes based on semantic principles, The Study of Japanese Linguistics, The Society of Japanese Linguistics, Vol. 5, No. 1, pp. 46-52.
+
+---
+
+### **Reference 2**
+
+- Yamamoto, H. and Hodošček, B. (2019). An Analysis of the Differences Between Classical and Contemporary Poetic Vocabulary of the Kokinshu, The 9th Conference of Japanese Association for Digital Humanities, JADH2019) Localization in Global DH, 68--71.
 - Yamamoto, H., Hodošček, B., & Chen, X. (2024). Hachidaishu Part-of-Speech Dataset (1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.13940187
 - Yamamoto, H., Hodošček, B., & Chen, X. (2024). Kokinwakashu Hyoshaku by Motoomi Kaneko translation sentence vocabulary dataset (v1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.13942707
-- Yamamoto, H., (2009). Thesaurus for the Hachidaishu (ca. 905-1205) with the classification codes based on semantic principles, The Study of Japanese Linguistics, The Society of Japanese Linguistics, Vol. 5, No. 1, pp. 46-52.
+- Yamamoto, H. (2024). Process Grammar Model: Immediate Grammar and Adjustment Grammar [Working paper]. Zenodo. https://doi.org/10.5281/zenodo.15003730
