@@ -506,7 +506,9 @@ Gap:                                             fabs(D-H)= 0.029
 
 ---
 
-![width fit:90%](./images/fig-298.png)
+![w:1024](./images/fig-298.png)
+
+Figure: Ingredients of the translation of Kokinshu No. 298 by Komachiya.
 
 ---
 
