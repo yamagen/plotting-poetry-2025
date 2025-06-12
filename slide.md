@@ -633,9 +633,6 @@ So far, we've sketched out the problem—but how do we proceed?
 
 ### **Content words**
 
-- No modifications.
-- Noun and adjective expand images
-
 ---
 
 ```
@@ -683,7 +680,7 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 
 ---
 
-### Key Insights & Future Directions
+### Key Insights 1
 
 - **Concrete / Symbolic Keywords**
 
@@ -699,21 +696,19 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 
 ---
 
-### Summary: Vocabulary Compression Patterns in Waka
+### Key Insights 2
 
-- Emphasis on concrete, highly symbolic keywords
-- Tendency to omit abstract, generic, or self-referential nouns and general temporal terms
-- Variation in how the same natural or seasonal motifs are treated across poems
+- **Unexpectedly low direct frequencies**
 
----
+  - i.e., "ume" (plum), "sakura" (cherry), and "yuki" (snow)
 
-### Key Insights for Future Research
+  - Often subsumed under the generic term “flower” or conveyed metaphorically
 
-- Unexpectedly low direct frequencies of "ume" (plum), "sakura" (cherry), and "yuki" (snow)
+- **A promising focal point for comparative studies on thematic selection**
 
-  → Often subsumed under the generic term “flower” or conveyed metaphorically
-
-- A promising focal point for comparative studies on thematic selection
+  - Why do these specific nature terms appear less frequently in waka?
+  - Why did not poets choose simple, direct expressions for these themes?
+    such as "Ume/plum" or "Sakura/cherry"?
 
 ---
 
