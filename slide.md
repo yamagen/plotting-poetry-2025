@@ -614,6 +614,27 @@ So far, we've sketched out the problem—but how do we proceed?
 
 **_→ we need the accountability of the results._**
 
+---
+
+## Why is "Researchers Getting Hands-On" Important?
+
+- **"Not a Black Box" Assurance**
+  Both cluster analysis and visualization are conducted with the researchers manually verifying the correspondence between data changes and hypotheses, which is crucial in linguistic research.
+
+- **"Small Examples to Big Understanding"**
+
+  The process of analyzing the data is not just about the final results, but also about understanding the individual transformations. For example, showing how "春霞 → 春 + 霞" or "ふりつつ/furitsutsu → 降り降りして/furi furi shite" illustrates each transformation helps convey the meaning of the analysis
+
+- **"Hands-On Approach"**
+
+  The hands-on approach allows researchers to explore the data in a way that is not just about the final results, but also about understanding the individual transformations. This is especially important in linguistic research, where the meaning of the data is often complex and nuanced.
+
+---
+
+## **Demonstration of the Process**
+
+---
+
 <!--
 ### **Four Seasons Sections of Kokin Wakashū**
 
@@ -628,8 +649,6 @@ So far, we've sketched out the problem—but how do we proceed?
 
 ---
 -->
-
----
 
 ### **Content words**
 
@@ -714,7 +733,7 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 
 ### **Nature Themes as Residuals**
 
-- Specific names like 梅/plum・桜/cherry are often replaced by the generic 「花/flower」 in waka
+- Specific names like Ume/plum・Sakura/cherry are often replaced by the generic 「Hana/flower」 in waka
 - 雪/snow is frequently rendered metaphorically (e.g. 「白き/shiroki 花/flower」) rather than named directly
 
 ⇒ This substitutional practice leads to low direct frequencies for these terms
@@ -731,9 +750,11 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 
 ---
 
-#### Predicate Correspondence Analysis
+### **Predicate Correspondence Analysis**
 
-- **Command executed**
+---
+
+#### **Command executed**
 
 ```bash
 ./c2m.sh kokin kaneko 1-100 -d \
@@ -747,7 +768,7 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 - Each line shows:
   - Length in characters
   - Original predicate span ([start|…|end])
-  - “⇒” Transformed predicate span in the waka context
+  - ⇒ Transformed predicate span in the waka context
 
 ---
 
@@ -784,10 +805,6 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 
 ---
 
-## **Results**
-
----
-
 ### **Word Types**
 
 - Chinese word construction techniques applied to Waka
@@ -821,6 +838,48 @@ JPN -->
 
 ---
 
+### **Poetic Compression**
+
+- Poetic compression is a key feature of Waka.
+- It involves condensing complex ideas into concise phrases.
+
+| **Normal Narration (Expansion)**    | **Poetic Compression (Condensation)** |
+| ----------------------------------- | ------------------------------------- |
+| 梅の花を折ってしまったので          | 梅の花                                |
+| I picked a plum blossom and it fell | ume no hana                           |
+| 朝に降りている露                    | 朝露                                  |
+| Morning dew falling down            | asa tsuyu                             |
+| 白く光った露                        | 白露                                  |
+| White dew shining                   | shira tsuyu                           |
+| 鳴いていないけれども                | かけてなけども                        |
+| Not chirping, but                   | kakete nakedomo                       |
+| ゆっくりと降り続いている雨          | 降り降りして                          |
+| Slowly keep falling rain            | furi furi shite                       |
+
+---
+
+### **Poetic Compression Techniques**
+
+| **Technique** | **Description**                              | **Example**                      |
+| ------------- | -------------------------------------------- | -------------------------------- |
+| 文を語に圧縮  | Compressing sentences into words             | 梅の花 (ume no hana)             |
+| 漢語化圧縮    | Using Chinese characters to condense meaning | 朝露 (asa tsuyu)                 |
+| 畳語強調      | Repetition for emphasis                      | 降り降りして (furi furi shite)   |
+| 感情の抽象化  | Abstracting emotions                         | 鳴く&rarr;cry(birds)..cry(human) |
+| 省略と省略語  | Omitting unnecessary words                   | 白露 (shira tsuyu)               |
+| 読者に委ねる  | Leaving interpretation to the reader         | 白...雪/snow, 花/flower          |
+
+---
+
+### **Questions for Discussion**
+
+- What kinds of patterns do you observe when comparing poetic originals with their translations in your own corpus?
+- Have you found similar cases of word expansion (e.g., a single poetic word becoming a phrase in translation)?
+- Do you ever annotate or align poetic lines manually before analysis? How do you balance structure and meaning?
+- Can we think of ways to represent translation divergence not just as loss/gain, but as stylistic transformation?
+- How might this Japanese example (e.g., "朝露" → "露が朝に降りている") resonate with condensation in your own poetic tradition?
+
+<!--
 ## **Discussion**
 
 - Explore poetic compression in modern Japanese
@@ -833,17 +892,26 @@ JPN -->
 - Uncover underlying rules (overt and covert)
 - Explore the implications of compression
 - Simulate the transformation process:
+-->
 
 ---
 
-## **Conclusion**
+## **Conclusion 1**
 
-The ways of the compression of Poetic Thought
-Into 31-Syllable Form (the Closet of skeleton)
+**The Ways of the Compression of Poetic Thought Into 31-Syllable Form
+&rarr;<span class="red">How to Pack ideas into the Closet of Skeleton</span>**
 
 - Word Compression
 - Predicate Compression
 - Shortening by removing grammatical elements
+
+> This is how we approached translation analysis in Japanese waka. We wonder how similar or different your poetic traditions behave in such transformations. Let's explore this together.
+
+---
+
+## **Conclusion 2**
+
+![width:1200px](./images/thought2waka02.png)
 
 ---
 
