@@ -864,7 +864,7 @@ JPN -->
 | ------------- | -------------------------------------------- | -------------------------------- |
 | 文を語に圧縮  | Compressing sentences into words             | 梅の花 (ume no hana)             |
 | 漢語化圧縮    | Using Chinese characters to condense meaning | 朝露 (asa tsuyu)                 |
-| 畳語強調      | Repetition for emphasis                      | 降り降りして (furi furi shite)   |
+| 強調回避      | Avoiding Repetition for emphasis             | 降りつつ (furi tsutsu)           |
 | 感情の抽象化  | Abstracting emotions                         | 鳴く&rarr;cry(birds)..cry(human) |
 | 省略と省略語  | Omitting unnecessary words                   | 白露 (shira tsuyu)               |
 | 読者に委ねる  | Leaving interpretation to the reader         | 白...雪/snow, 花/flower          |
