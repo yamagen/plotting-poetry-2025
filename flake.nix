@@ -36,6 +36,8 @@
           default = pkgs.mkShell {
             packages = [
               pkgs.marp-cli
+              pkgs.jekyll
+              pkgs.rubyPackages.jekyll-theme-primer
             ];
           };
         }

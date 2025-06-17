@@ -1,8 +1,10 @@
+/* @theme custom-theme */
+
 @import "default"; /* デフォルトテーマをベースに */
 
 section {
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 30px;
+  font-family: "IBM Plex Sans Cond", "Helvetica", "Arial", sans-serif;
+  font-size: 38px;
   line-height: 1;
   letter-spacing: -0.02em; /* 少し引き締める */
   color: #222;
@@ -12,7 +14,7 @@ section {
 
 /* 見出しの引き締め＆メリハリ */
 h1 {
-  font-size: 50px;
+  font-size: 54px;
   font-weight: bold;
   color: #222;
   letter-spacing: -0em;
@@ -20,14 +22,14 @@ h1 {
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 48px;
   color: #333;
   letter-spacing: -0em;
   margin-bottom: 0.6em;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 40px;
   color: #444;
   letter-spacing: -0em;
 }
@@ -66,7 +68,7 @@ pre {
   color: #5cb85c;
 }
 .blue {
-  color: blue;
+  color: #107AB0;
 }
 
 /* 表の基本スタイル */
@@ -83,7 +85,7 @@ pre {
 .datasetsmall {
   font-family: monospace;
   white-space: pre-wrap;
-  font-size: 0.8em;
+  font-size: 0.7em;
   line-height: 1;
   margin: 0;
   padding: 0;
@@ -92,7 +94,7 @@ pre {
 .dataset {
   font-family: monospace;
   white-space: pre-wrap;
-  font-size: 0.9em;
+  font-size: 0.75em;
   line-height: 1;
   margin: 0;
   padding: 0;
