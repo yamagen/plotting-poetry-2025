@@ -6,6 +6,12 @@ backgroundColor: "#f5f5dc"
 color: "#333"
 ---
 
+<!--
+![h:400px](images/pp8-qr.png)
+
+---
+-->
+
 ### Plotting Poetry 2025
 
 ![bg right:18%](images/IMG_7297.JPG)
