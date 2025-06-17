@@ -44,10 +44,8 @@ color: "#333"
 
 ### **Early established _waka_**
 
-- The Man'yoshu: est. around 7-8th century in Chinese notation.
-  written in Chinese characters, but read in Japanese.
-- The Kokinshu: est. ca. 905 in Japanese notation.
-  written in Japanese characters, and read in Japanese.
+- The Man'yoshu: est. around 7-8th century written in Chinese characters, but read in Japanese.
+- The Kokinshu: est. ca. 905 written in Japanese characters, and read in Japanese.
 
 - <span class="red">Before the Man'yoshu, Kanshi (Chinese poetry) was the dominant form. </span>
 
@@ -86,16 +84,15 @@ Theme: <span class="red">Waiting for the arrival of spring</span>
 
 ---
 
-### **Style and rhetorics**
+### **_Waka_: Stylistic and rhetorics perspective**
 
 - Express natural views and emotions in a simple sentence:
-
   - plum branch, warbler, spring, snow
 
 - Use of rhetorics to create a poetic atmosphere:
-  - Pun (kakekotoba)
-  - Pillow words (makurakotoba)
-  - Introductory words (o-kotoba)
+  - Pun (_kakekotoba_)
+  - Pillow words (_makurakotoba_)
+  - Introductory words (_o-kotoba_)
 
 ---
 
@@ -158,18 +155,19 @@ they express what they feel in their hearts
 ---
 -->
 
+## **Methods**
+
 ### **Obtain some typical conversion patterns from both**
 
 - OP: original poems, and
 - CT: contemporary translations
 
-
 ### **Through the comparison of OP and CT, we can obtain:**
 
 - Grammatical patterns, especially predicative elements.
-  i.e. tense, aspect, &larr; elements making a poem longer.
-- Lexical construction such as proper nouns. <!-- any reason for not having arrow here? -->
-- Rhetorical techniques &rarr; such as implications.
+  i.e. tense, aspect, ... &larr; elements making a poem longer.
+- Lexical constructions such as proper nouns.
+- Rhetorical techniques such as implications.
 
 ---
 
@@ -618,24 +616,23 @@ done
 
 > Even a statistician would hesitate to give a definitive answer here.
 
-→ We will observe the patterns of compression one by one.
-
 ---
 
 ## Considerations in approach
 
-**So far, we've sketched out the problem—but how do we proceed?**
+So far, we've sketched out the problem—**but how do we proceed?**
 
-**By asking AI? But how are we going to explain the results...**
+By asking AI? But how are we going to explain the results...
 
+<!--
 - John Tukey's Exploratory Data Analysis (EDA) is a good start.
 
   A foundational work in exploratory data analysis (EDA) that introduced the stem-and-leaf display as a way to visualize data distributions effectively.
 
-  <!--Also Box's methodology-->
+  Also Box's methodology
 
 - We will seek evidence, but even more than that,
-
+-->
   **_→ we need accountability of the results._**
 
 ---
@@ -647,6 +644,10 @@ done
 - **Small examples = deeper insight** — E.g., tracing "春霞 → 春 + ... + 霞" or "ふりつつ → 降り降りして" reveals transformation logic.
 
 - **Hands-on exploration** — Prioritizes understanding processes over just results, essential for nuanced linguistic analysis of complex data.
+
+We believe that John Tukey's Exploratory Data Analysis (EDA) is a good start.
+
+→ **We will observe the patterns of compression one by one.**
 
 <!--
 - **"Not a black box" assurance**
@@ -660,7 +661,7 @@ done
 -->
 ---
 
-## **Demonstration of the hands-on process**
+## **Results of the hands-on process**
 
 ---
 
@@ -728,7 +729,7 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 
 ---
 
-### Key insights 1
+### Key insights
 
 - **Concrete / symbolic keywords**
 
@@ -744,28 +745,19 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 
 ---
 
-### Key insights 2
+### **Comment on nature themes as residuals**
 
 - **Unexpectedly low direct frequencies**
 
   - i.e., _ume_ (plum), _sakura_ (cherry), and _yuki_ (snow)
 
-  - Often subsumed under the generic term "flower" or conveyed metaphorically
+  - Often subsumed under the generic term "flower" or conveyed metaphorically: _yuki_/snow as 白き/white 花/flower
 
 - **A promising focal point for comparative studies on thematic selection**
 
   - Why do these specific nature terms appear less frequently in _waka_?
   - Why did not poets choose simple, direct expressions for these themes?
     (Such as _ume_ or _sakura_?)
-
----
-
-### **Nature themes as residuals**
-
-- Specific names like _ume_/plum and _sakura_/cherry are often replaced by the generic _hana_/flower in _waka_
-- _yuki_/snow is frequently rendered metaphorically (e.g. 白き/white 花/flower) rather than named directly
-
-⇒ This practice of substitution leads to low direct frequencies for these terms
 
 ---
 <!--
@@ -779,8 +771,6 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 
 ---
 -->
-
-### **Predicate Correspondence Analysis**
 
 <!--
 ---
@@ -820,7 +810,7 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 ---
 -->
 
-#### **Key observations**
+### **Key observations from predicate correspondence analysis**
 
 - Substantial expansions
 
@@ -865,6 +855,8 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 
 JPN -->
 
+
+<!--
 ---
 
 ### **Poetic compression**
@@ -884,10 +876,14 @@ JPN -->
 | Not chirping, but                   | kakete nakedomo                       |
 | ゆっくりと降り続いている雨          | 降り降りして                          |
 | Slowly keep falling rain            | furi furi shite                       |
+-->
 
 ---
 
 ### **Summary of poetic compression techniques encountered**
+
+- Poetic compression is a key feature of _waka_.
+- It involves condensing complex ideas into concise phrases.
 
 | **Technique description**                    | **Example**                      |
 | -------------------------------------------- | -------------------------------- |
@@ -920,7 +916,7 @@ JPN -->
 - Analyze how poetic thought is transfigured
 - Uncover underlying rules (overt and covert)
 - Explore the implications of compression
-- Simulate the transformation process:
+- Simulate the transformation process
 -->
 
 ---
