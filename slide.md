@@ -29,7 +29,8 @@ color: "#333"
 
 ## Basics of WAKA
 
-**Classical Japanese Poetry, <span class="red">WA</span><span class="blue">KA</span>**
+**Classical Japanese Poetry,
+<span class="red">WA</span><span class="blue">KA</span>**
 
 - <span class="red">WA</span> &rarr; Japanese / Japanese style
 - <span class="blue">KA</span> &rarr; song
@@ -50,18 +51,19 @@ color: "#333"
 
 ### **Early established _waka_**
 
-- The Man'yoshu: est. around 7-8th century written in Chinese characters, but read in Japanese.
-- The Kokinshu: est. ca. 905 written in Japanese characters, and read in Japanese.
+- The Man'yoshu: est. around 7-8th century written in Chinese characters, but
+  read in Japanese.
+- The Kokinshu: est. ca. 905 written in Japanese characters, and read in
+  Japanese.
 
-- <span class="red">Before the Man'yoshu, Kanshi (Chinese poetry) was the dominant form. </span>
+- <span class="red">Before the Man'yoshu, Kanshi (Chinese poetry) was the
+  dominant form. </span>
 
 ---
 
 ### Example from the Kokinshu
 
-![](images/waka.png)
----
-
+## ![](images/waka.png)
 
 <!-- JPN_ONLY_START
 - Only 31 syllables with 5,7,5,7,7 sounds
@@ -93,6 +95,7 @@ Theme: <span class="red">Waiting for the arrival of spring</span>
 ### **_Waka_: Stylistic and rhetorics perspective**
 
 - Express natural views and emotions in a simple sentence:
+
   - plum branch, warbler, spring, snow
 
 - Use of rhetorics to create a poetic atmosphere:
@@ -170,8 +173,8 @@ they express what they feel in their hearts
 
 ### **Through the comparison of OP and CT, we can obtain:**
 
-- Grammatical patterns, especially predicative elements.
-  i.e. tense, aspect, ... &larr; elements making a poem longer.
+- Grammatical patterns, especially predicative elements. i.e. tense, aspect, ...
+  &larr; elements making a poem longer.
 - Lexical constructions such as proper nouns.
 - Rhetorical techniques such as implications.
 
@@ -179,14 +182,17 @@ they express what they feel in their hearts
 
 ## **Materials**
 
-- A) _Kokinshu_: a collection of 1,000 _waka_ poems
-  &rarr; [Hachidaishu Classical Japanese Poetic Vocabulary Dataset](https://zenodo.org/records/14001396) on Zenodo contains the original poems of the Hachidaishu (including the Kokinshu) and their semantic codes.
-- B) Modern Japanese translations: 10 sets of translations
-  &rarr; Parallel corpus of original poems and their translations
+- A) _Kokinshu_: a collection of 1,000 _waka_ poems &rarr;
+  [Hachidaishu Classical Japanese Poetic Vocabulary Dataset](https://zenodo.org/records/14001396)
+  on Zenodo contains the original poems of the Hachidaishu (including the
+  Kokinshu) and their semantic codes.
+- B) Modern Japanese translations: 10 sets of translations &rarr; Parallel
+  corpus of original poems and their translations
   [Kokinwakashu Hyoshaku by Motoomi Kaneko translation sentence vocabulary dataset](https://zenodo.org/records/13942707)
   - only Kaneko Motoomi's translation is available on Zenodo
 
 ---
+
 <!--
 
 ### **A: Kokinshu 1000 original dataset (OP)**
@@ -217,8 +223,7 @@ they express what they feel in their hearts
 |  9. | Kojima Noriyuki & Arai Eizo | 1989 |   483 | Unknown                        |
 | 10. | Katagiri Yoichi             | 1998 | 3,022 | Literal translation            |
 
-<!--
----
+## <!--
 
 ### **_Kokinwakashu Hyoshaku_ by Motoomi Kaneko**
 
@@ -228,15 +233,18 @@ they express what they feel in their hearts
 - Hilofumi Yamamoto, Bor Hodošček, and Xudong Chen
 - Published October 16, 2024 / Version v1.0.1
 - [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13942707.svg)](https://doi.org/10.5281/zenodo.13942707)
--->
+  -->
 
 ---
 
 ## **Methods**
 
-Using a parallel corpus of pre-tokenized _waka_ (OP) and modern Japanese translations (CT),
+Using a parallel corpus of pre-tokenized _waka_ (OP) and modern Japanese
+translations (CT),
+
 - align _waka_ (OP) with contemporary translations (CT)
-- use the BG-code (WLSP: word list semantic principle) semantic principle codes to match words at 3 levels of categorical similarity
+- use the BG-code (WLSP: word list semantic principle) semantic principle codes
+  to match words at 3 levels of categorical similarity
 - subtract and model poetic construction
 
 <!--
@@ -263,7 +271,8 @@ https://github.com/masayu-a/WLSP
 <span class="Largefont">CT - OP = Residual</span>
 
 - We will subtract the elements of OP from the elements of CT.
-- In other words, we will find out what the CT needs to say that the OP does not say.
+- In other words, we will find out what the CT needs to say that the OP does not
+  say.
 
 ---
 
@@ -484,7 +493,8 @@ BG-18-0000-00-000-X:助数詞%counting
 
 ### **Extract residual of Kaneko no. 5: `code2match -r`**
 
-Residual tokens reveal what the translation needs to say that the original poem leaves unsaid. (Example output:)
+Residual tokens reveal what the translation needs to say that the original poem
+leaves unsaid. (Example output:)
 
 <div class="dataset">
 CT A-B-C--D-E--F--G-H------------------
@@ -553,7 +563,6 @@ PRED: kaneko   7 [22|みゆ|らむ|23] => [41|見える|の|で|あろ|う|46]
                  op predicate         ct predicate
 ```
 
-
 <!--
 
 ### **Script to run code2match**
@@ -612,6 +621,7 @@ for i in $(seq "$START" "$END"); do
 done
 ```
 -->
+
 ---
 
 ## The compression of poetic thought into 31-syllable form: Questions
@@ -639,17 +649,21 @@ By asking AI? But how are we going to explain the results...
 
 - We will seek evidence, but even more than that,
 -->
-  **_→ we need accountability of the results._**
+
+**_→ we need accountability of the results._**
 
 ---
 
 ## Why is it important that researchers go "hands-on"?
 
-- **No "black box"** — Manually validate data-hypothesis links using explainable models (critical for linguistics).
+- **No "black box"** — Manually validate data-hypothesis links using explainable
+  models (critical for linguistics).
 
-- **Small examples = deeper insight** — E.g., tracing "春霞 → 春 + ... + 霞" or "ふりつつ → 降り降りして" reveals transformation logic.
+- **Small examples = deeper insight** — E.g., tracing "春霞 → 春 + ... + 霞" or
+  "ふりつつ → 降り降りして" reveals transformation logic.
 
-- **Hands-on exploration** — Prioritizes understanding processes over just results, essential for nuanced linguistic analysis of complex data.
+- **Hands-on exploration** — Prioritizes understanding processes over just
+  results, essential for nuanced linguistic analysis of complex data.
 
 We believe that John Tukey's Exploratory Data Analysis (EDA) is a good start.
 
@@ -665,6 +679,7 @@ We believe that John Tukey's Exploratory Data Analysis (EDA) is a good start.
 - **"Hands-on approach"**
   The hands-on approach allows researchers to explore the data in a way that is not just about the final results, but also about understanding the individual transformations. This is especially important in linguistic research, where the meaning of the data is often complex and nuanced.
 -->
+
 ---
 
 ## **Results of the hands-on process**
@@ -757,15 +772,17 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 
   - i.e., _ume_ (plum), _sakura_ (cherry), and _yuki_ (snow)
 
-  - Often subsumed under the generic term "flower" or conveyed metaphorically: _yuki_/snow as 白き/white 花/flower
+  - Often subsumed under the generic term "flower" or conveyed metaphorically:
+    _yuki_/snow as 白き/white 花/flower
 
 - **A promising focal point for comparative studies on thematic selection**
 
   - Why do these specific nature terms appear less frequently in _waka_?
-  - Why did not poets choose simple, direct expressions for these themes?
-    (Such as _ume_ or _sakura_?)
+  - Why did not poets choose simple, direct expressions for these themes? (Such
+    as _ume_ or _sakura_?)
 
 ---
+
 <!--
 ### **Remarks**
 
@@ -778,8 +795,7 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 ---
 -->
 
-<!--
----
+## <!--
 
 #### **Command executed**
 
@@ -791,7 +807,8 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
   | head -10
 ```
 
-- Extracted the top 10 longest predicate mappings between the Kokin and Kaneko corpora
+- Extracted the top 10 longest predicate mappings between the Kokin and Kaneko
+  corpora
 - Each line shows:
   - Length in characters
   - Original predicate span ([start|…|end])
@@ -814,6 +831,7 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 </div>
 
 ---
+
 -->
 
 ### **Key observations from predicate correspondence analysis**
@@ -834,15 +852,17 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 
 ### **Word Types**
 
-- Chinese word construction techniques applied to _waka_: <!-- - Ways to combine two Chinese characters: -->
-  - person + action (e.g., 人言 person speaks, 人来 person comes)
-    ... not: 人の言葉 someone speaks words, 人の来る someone comes somewhere
-  - noun + noun (e.g., 山川 mountain and river, 山野 mountain and field)
-    ... not: 山の川 mountain's river, 山の野 mountain's field
-  - noun modifier + modified noun (e.g., 朝露 morning dew, 白露 white dew)
-    ... not: 朝に降りている露 morning-falling dew, 白く光った露 white-shining dew
+- Chinese word construction techniques applied to _waka_:
+  <!-- - Ways to combine two Chinese characters: -->
+  - person + action (e.g., 人言 person speaks, 人来 person comes) ...
+    not: 人の言葉 someone speaks words, 人の来る someone comes somewhere
+  - noun + noun (e.g., 山川 mountain and river, 山野 mountain and field) ...
+    not: 山の川 mountain's river, 山の野 mountain's field
+  - noun modifier + modified noun (e.g., 朝露 morning dew, 白露 white dew) ...
+    not: 朝に降りている露 morning-falling dew, 白く光った露 white-shining dew
 
-&rarr; These are one of the <span class="red">compression methods</span> in _waka_.
+&rarr; These are one of the <span class="red">compression methods</span> in
+_waka_.
 
 <!-- JPN
   川なども)。又これらは他品詞に派生もするのである(浅し↓浅緑・浅み、古↓古す・古し・古枝・古里等、露↓露けし・朝露・下露・白露・露霜等々)。このように、
@@ -861,9 +881,7 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 
 JPN -->
 
-
-<!--
----
+## <!--
 
 ### **Poetic compression**
 
@@ -882,6 +900,7 @@ JPN -->
 | Not chirping, but                   | kakete nakedomo                       |
 | ゆっくりと降り続いている雨          | 降り降りして                          |
 | Slowly keep falling rain            | furi furi shite                       |
+
 -->
 
 ---
@@ -904,11 +923,16 @@ JPN -->
 
 ### **Questions for discussion**
 
-- What kinds of patterns do you observe when comparing poetic originals with their translations in your own corpus?
-- Have you found similar cases of word expansion (e.g., a single poetic word becoming a phrase in translation)?
-- Do you ever annotate or align poetic lines manually before analysis? How do you balance structure and meaning?
-- Can we think of ways to represent translation divergence not just as loss/gain, but as stylistic transformation?
-- How might this Japanese example (e.g., "朝露" → "露が朝に降りている") resonate with condensation in your own poetic tradition?
+- What kinds of patterns do you observe when comparing poetic originals with
+  their translations in your own corpus?
+- Have you found similar cases of word expansion (e.g., a single poetic word
+  becoming a phrase in translation)?
+- Do you ever annotate or align poetic lines manually before analysis? How do
+  you balance structure and meaning?
+- Can we think of ways to represent translation divergence not just as
+  loss/gain, but as stylistic transformation?
+- How might this Japanese example (e.g., "朝露" → "露が朝に降りている") resonate
+  with condensation in your own poetic tradition?
 
 <!--
 ## **Discussion**
@@ -936,15 +960,15 @@ JPN -->
 - Predicate compression
 - Shortening by removing grammatical elements
 
-> This is how we approached translation analysis in Japanese _waka_. We wonder how similar or different your poetic traditions behave in such transformations. Let's explore this together.
+> This is how we approached translation analysis in Japanese _waka_. We wonder
+> how similar or different your poetic traditions behave in such
+> transformations. Let's explore this together.
 
 ---
-
 
 ![width:1200px](./images/thought2waka02.png)
 
-<!--相手がベーシックな用語をみてアイデアを拡張しやすい。逆にいうと、アイディアが拡張しやすいものを著者が選んでいる。-->
----
+## <!--相手がベーシックな用語をみてアイデアを拡張しやすい。逆にいうと、アイディアが拡張しやすいものを著者が選んでいる。-->
 
 <!--
 ### **Future research directions**
@@ -963,16 +987,29 @@ JPN -->
 
 ### **References**
 
-- Kamitani, Kaoru, (1999). Kokinwakashu yogo no goiteki kenkyu (Lexical Study of Kokinwakashu vocabulary), Izumi Shoten, Osaka.
-- Sachi Kato, Masayuki Asahara, Nanami Moriyama, Asami Ogiwara, and Makoto Yamazaki (2021). Opposite Information Annotation on Word List by Semantic Principles, Journal of Natural Language Processing, Vol.28, No.1, 60-81, DOI https://doi.org/10.5715/jnlp.28.60.
+- Kamitani, Kaoru, (1999). Kokinwakashu yogo no goiteki kenkyu (Lexical Study of
+  Kokinwakashu vocabulary), Izumi Shoten, Osaka.
+- Sachi Kato, Masayuki Asahara, Nanami Moriyama, Asami Ogiwara, and Makoto
+  Yamazaki (2021). Opposite Information Annotation on Word List by Semantic
+  Principles, Journal of Natural Language Processing, Vol.28, No.1, 60-81, DOI
+  https://doi.org/10.5715/jnlp.28.60.
 - John W. Tukey, (1977). Exploratory Data Analysis, Addison-Wesley, Reading, MA.
-- Yamamoto, H., (2009). Thesaurus for the Hachidaishu (ca. 905-1205) with the classification codes based on semantic principles, The Study of Japanese Linguistics, The Society of Japanese Linguistics, Vol. 5, No. 1, pp. 46-52.
+- Yamamoto, H., (2009). Thesaurus for the Hachidaishu (ca. 905-1205) with the
+  classification codes based on semantic principles, The Study of Japanese
+  Linguistics, The Society of Japanese Linguistics, Vol. 5, No. 1, pp. 46-52.
 
 ---
 
 ### **References (cont.)**
 
-- Yamamoto, H. and Hodošček, B. (2019). An Analysis of the Differences Between Classical and Contemporary Poetic Vocabulary of the Kokinshu, The 9th Conference of Japanese Association for Digital Humanities, JADH2019) Localization in Global DH, 68--71.
-- Yamamoto, H., Hodošček, B., & Chen, X. (2024). Hachidaishu Part-of-Speech Dataset (1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.13940187
-- Yamamoto, H., Hodošček, B., & Chen, X. (2024). Kokinwakashu Hyoshaku by Motoomi Kaneko translation sentence vocabulary dataset (v1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.13942707
-- Yamamoto, H. (2024). Process Grammar Model: Immediate Grammar and Adjustment Grammar [Working paper]. Zenodo. https://doi.org/10.5281/zenodo.15003730
+- Yamamoto, H. and Hodošček, B. (2019). An Analysis of the Differences Between
+  Classical and Contemporary Poetic Vocabulary of the Kokinshu, The 9th
+  Conference of Japanese Association for Digital Humanities, JADH2019)
+  Localization in Global DH, 68--71.
+- Yamamoto, H., Hodošček, B., & Chen, X. (2024). Hachidaishu Part-of-Speech
+  Dataset (1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.13940187
+- Yamamoto, H., Hodošček, B., & Chen, X. (2024). Kokinwakashu Hyoshaku by
+  Motoomi Kaneko translation sentence vocabulary dataset (v1.0.1) [Data set].
+  Zenodo. https://doi.org/10.5281/zenodo.13942707
+- Yamamoto, H. (2024). Process Grammar Model: Immediate Grammar and Adjustment
+  Grammar [Working paper]. Zenodo. https://doi.org/10.5281/zenodo.15003730
