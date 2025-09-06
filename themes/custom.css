@@ -14,7 +14,7 @@ section {
 
 /* 見出しの引き締め＆メリハリ */
 h1 {
-  font-size: 54px;
+  font-size: 48px;
   font-weight: bold;
   color: #222;
   letter-spacing: -0em;
@@ -22,14 +22,14 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 44px;
   color: #333;
   letter-spacing: -0em;
   margin-bottom: 0.6em;
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 36px;
   color: #444;
   letter-spacing: -0em;
 }
@@ -76,7 +76,7 @@ pre {
 .datasetlarge {
   font-family: monospace;
   white-space: pre-wrap;
-  font-size: 1.6em;
+  font-size: 1.4em;
   line-height: 1;
   margin: 0;
   padding: 0;
@@ -94,7 +94,7 @@ pre {
 .dataset {
   font-family: monospace;
   white-space: pre-wrap;
-  font-size: 0.75em;
+  font-size: 0.72em;
   line-height: 1;
   margin: 0;
   padding: 0;

@@ -8,8 +8,6 @@ color: "#333"
 
 <!--
 ![h:400px](images/pp8-qr.png)
-
----
 -->
 
 ### Plotting Poetry 2025
@@ -223,7 +221,7 @@ they express what they feel in their hearts
 |  9. | Kojima Noriyuki & Arai Eizo | 1989 |   483 | Unknown                        |
 | 10. | Katagiri Yoichi             | 1998 | 3,022 | Literal translation            |
 
-## <!--
+<!--
 
 ### **_Kokinwakashu Hyoshaku_ by Motoomi Kaneko**
 
@@ -795,7 +793,7 @@ $ ./c2m.sh kokin kaneko 1-100 -r| awk '/BG-01/{print $9, $10}' | sort | uniq -c 
 ---
 -->
 
-## <!--
+<!--
 
 #### **Command executed**
 
